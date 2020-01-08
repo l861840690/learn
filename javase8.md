@@ -26,6 +26,14 @@ monitoring（监视）：包含了一些用来监视JVM性能，然后统计信�
 
 jconsole：这个命令可以启动一个图形控制台工具，使您能够监视和管理本地或者远程计算机上的java应用程序和虚拟机。
 
+VisualVm：是一个提供可视化界面的工具，用于在Java虚拟机运行时查看有关java应用程序的详细信息，以及时对这些应用程序进行故障排除和分析。
+
+JMC：Java Mission Control（Java任务控制器），用来监视和管理Java应用程序
+
+JFR：Java Flight Recorder（Java飞行记录器，黑匣子），是用来收集、诊断、分析运行中的java应用程序的数据的工具。
+
+
+
 
 
 
