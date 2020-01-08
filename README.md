@@ -1,2 +1,2 @@
 # learn
-JavaSE8概念图大纲
+包含了JavaSE8，JavaEE，Spring，Apache等技术的学习大纲
