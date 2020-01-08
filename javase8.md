@@ -32,6 +32,40 @@ JMC：Java Mission Control（Java任务控制器），用来监视和管理Java�
 
 JFR：Java Flight Recorder（Java飞行记录器，黑匣子），是用来收集、诊断、分析运行中的java应用程序的数据的工具。
 
+JPDA（java平台调试器体系结构）：由三个接口构成，是用于桌面系统开发环境中的调试器。
+
+JVM Ti（java虚拟机机床接口）：是供工具使用的本机编程接口。它提供了一种检查状态和控制运行在java虚拟机中的应用程序的方法。支持需要访问Jvm状态的所有工具。
+
+IDL（交互式数据语言）：包含了用于创建使用OMG标准IDL和CORBA/IIOP的应用程序的工具。
+
+RMI（远程方法调用）：包含了有助于创建通过Web或其他网络进行交互的应用程序。
+
+JavaDB：是一个基于java编程语言和SQL的关系型数据库管理系统。是ApacheDerby项目的Oracle版本。
+
+Deployment（部署）；包含了用于在Web上部署Java应用程序和applet时使用的实用程序。
+
+Internationalization（国际化）：包含了有助于创建可本地化的应用程序的工具。
+
+Web Services：包含了一些Java Web服务的工具。
+
+Troubleshooting：包含了一些可用于特定的故障排除任务的工具。但它们可能无法在后续的jdk版本中使用。
+
+### Deployment（部署）
+
+JavaWebStart：是一种应用程序部署技术，它允许您在Web浏览器上单击一次就可以启动功能齐全的应用程序。
+
+Applet（小程序）/Java plug-in（java插件）：Applet是以java编程语言编写的一些小应用程序。可以嵌入到Web浏览器中运行，通过java插件技术启动。
+
+#### User Interface Toolkits（用户界面工具包）
+
+JavaFx：它是一组图形和媒体包，使开发人员能够设计、创建、测试、调试和部署跨不同平台一致运行的富客户端应用程序。
+
+
+
+
+
+
+
 
 
 
