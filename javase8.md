@@ -6,6 +6,10 @@ description: JavaSE8概念图大纲
 
 
 
+## Java Language（Java语言）
+
+Java Language：Java编程语言是一种通用的、并发的、强类型的、基于类的面向对象语言。它通常被编译成Java虚拟机规范中定义的字节码指令集和二进制格式。
+
 ## Tools&ToolsAPI
 
 java:里面介绍了java命令的用法，用来启动java应用程序。
@@ -145,6 +149,10 @@ Preferences API（首选项API）：应用程序需要首选项和配置数据�
 JAR：这是一种与平台无关的文件格式，它可以将多个文件聚合成一个文件。可以用来将多个java小程序及其必须的组件捆绑成一个jar文件，它支持压缩，可在单个条目中进行数字签名，验证其来源。
 
 Zip：java.util.zip包提供读取和写入标准ZIP和GZIP文件格式的类。
+
+## Java Virtual Machine（Java虚拟机）
+
+Java HotSpot Client and Server VM（Java热点客户端和服务器虚拟机）
 
 
 
