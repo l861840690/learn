@@ -152,7 +152,7 @@ Zip：java.util.zip包提供读取和写入标准ZIP和GZIP文件格式的类。
 
 ## Java Virtual Machine（Java虚拟机）
 
-
+介绍了JDK提供的Java虚拟机\(VM\)的一个或多个实现。
 
 
 
