@@ -54,6 +54,8 @@ SpringIoC容器管理一个或多个bean。这些bean是通过提供给容器的
 
 介绍了depens-on属性的用法，该属性既可以指定初始化时依赖项，也可以指定单例bean。
 
+### 1.4.4. Lazy-initialized Beans（惰性初始化bean）
+
 
 
 
