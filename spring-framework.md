@@ -54,7 +54,17 @@ SpringIoC容器管理一个或多个bean。这些bean是通过提供给容器的
 
 介绍了depens-on属性的用法，该属性既可以指定初始化时依赖项，也可以指定单例bean。
 
-### 1.4.4. Lazy-initialized Beans（惰性初始化bean）
+### 1.4.4. Lazy-initialized Beans（延迟初始化bean）
+
+介绍了如何延迟初始化bean。
+
+### 1.4.5.Autowiring Collaborators（自动装配）
+
+介绍了如何使用自动装配，自动装配的局限性和缺点，如何从自动装配中排除一个bean。
+
+### 1.4.6. Method Injection（方法注入）
+
+讲述了什么情况下需要使用方法注入，如何使用方法注入、查找方法注入和任意方法替换。
 
 
 
