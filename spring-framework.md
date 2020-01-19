@@ -66,7 +66,23 @@ SpringIoC容器管理一个或多个bean。这些bean是通过提供给容器的
 
 讲述了什么情况下需要使用方法注入，如何使用方法注入、查找方法注入和任意方法替换。
 
+## 1.5. Bean Scopes（bean的作用域）
 
+介绍了bean的所有作用域
 
+### 1.5.1.The Singleton Scope（单例作用域）
 
+当定义bean定义并将其作用域为单例时，SpringIoC容器将创建由该bean定义定义的对象的一个实例。此单个实例存储在此类单例bean的高速缓存中，而对该命名bean的所有后续请求和引用都返回缓存的对象。
+
+### 1.5.2.The Prototype Scope（原型作用域）
+
+每次对特定bean提出请求时，bean部署的非单例原型作用域都会导致创建一个新bean实例。
+
+### 1.5.3. Singleton Beans with Prototype-bean Dependencies（**带有原型bean依赖项的单例bean**）
+
+### 1.5.4. Request, Session, Application, and WebSocket Scopes（**请求、会话、应用程序和WebSocket Scopes**）
+
+### 1.5.5. Custom Scopes（自定义**作用域**）
+
+介绍了如何创建自定义作用域和使用自定义作用域。
 
