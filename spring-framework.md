@@ -88,3 +88,7 @@ SpringIoC容器管理一个或多个bean。这些bean是通过提供给容器的
 
 ## 1.6. Customizing the Nature of a Bean（定制bean的性质）
 
+### 1.6.1. Lifecycle Callbacks（生命周期回调）
+
+
+
