@@ -86,3 +86,5 @@ SpringIoC容器管理一个或多个bean。这些bean是通过提供给容器的
 
 介绍了如何创建自定义作用域和使用自定义作用域。
 
+## 1.6. Customizing the Nature of a Bean（定制bean的性质）
+
