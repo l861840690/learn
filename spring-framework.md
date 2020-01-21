@@ -98,7 +98,51 @@ SpringIoC容器管理一个或多个bean。这些bean是通过提供给容器的
 
 #### **1.6.2. ApplicationContextAware和BeanNameAware**
 
-\*\*\*\*
+两个感知接口，分别用来声明ApplicationContext和bean的名称。
 
-\*\*\*\*
+#### 1.6.3.Other Aware Interfaces（其他感知接口）
+
+介绍了一些感知接口的作用和用法。
+
+### 1.7. Bean Definition Inheritance（bean定义继承）
+
+子bean定义从父定义继承配置数据。子定义可以覆盖某些值，也可以根据需要添加其他值。使用父bean和子bean定义可以节省大量的输入。这实际上是一种模版形式。本节内容介绍了使用基于xml的配置元数据时，如何使用parent属性，将父bean指定为此属性值。
+
+### 1.8.Container Extension Points（容器扩展点）
+
+通常，应用程序开发人员不需要子类。ApplicationContext实现类。相反，可以通过插入特殊集成接口的实现来扩展SpringIoC容器。接下来的几节将描述这些集成接口。
+
+#### 1.8.1.使用BeanPostProcessor自定义bean
+
+这个BeanPostProcessor接口定义了回调方法，可以通过实现这些方法来提供自己的实例化逻辑\(或覆盖容器的默认\)、相关性解析逻辑等等。
+
+#### 1.8.2.使用BeanFactoryPostProcessor自定义配置元数据
+
+Spring IoC容器允许BeanFactoryPostProcessor读取配置元数据，并有可能在容器实例化除BeanFactoryPostProcessor实例以外的任何bean之前更改它。
+
+#### 1.8.3.用FactoryBean定制实例化逻辑
+
+FactoryBean接口是可插入Spring IoC容器的实例化逻辑的一点。 如果您有复杂的初始化代码，而不是（可能）冗长的XML，可以用Java更好地表达，则可以创建自己的FactoryBean，在该类中编写复杂的初始化，然后将自定义FactoryBean插入容器。
+
+### 1.9. Annotation-based Container Configuration（基于注释的容器配置）
+
+基于注释的配置提供了XML设置的替代方案，它依赖字节码元数据来连接组件，而不是角括号声明。视情况使用，注释和xml都有其优点和缺点，通常由开发人员来决定哪种策略更适合他们。
+
+#### 1.9.1. @Required
+
+这个@Required注释适用于bean属性setter方法。
+
+#### 1.9.2. Using @Autowired（使用@Autowired）
+
+在SpringFramework4.3中，@Autowired如果目标bean开始只定义一个构造函数，则不再需要对此类构造函数进行注释。但是，如果有几个构造函数可用，至少必须用@Autowired为了指导容器使用哪一个。
+
+#### 1.9.3. Fine-tuning Annotation-based Autowiring with @Primary（基于注解的微调自动装配@Primary）
+
+由于按类型自动排列可能会导致多个候选对象，因此通常需要对选择过程有更多的控制。实现这一目标的一种方法是使用Spring的@Primary注释，@Primary指示当多个bean被自动分配到单值依赖项时，应优先考虑特定bean。如果候选人中恰好存在一个主bean，则它将成为自动设置的值。
+
+#### 1.9.4. Fine-tuning Annotation-based Autowiring with Qualifiers（**带有限定符的微调注解自动装配**）
+
+@Primary是一种有效的方法，在确定一个主要候选对象时，可以通过几个实例使用自动按类型进行自动装配。当您需要对选择过程进行更多的控制时，可以使用Spring的@Qualifier注释可以将限定符值与特定的参数关联起来，缩小类型匹配的集合，以便为每个参数选择特定的bean。
+
+
 
