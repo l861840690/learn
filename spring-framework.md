@@ -144,5 +144,59 @@ FactoryBean接口是可插入Spring IoC容器的实例化逻辑的一点。 如�
 
 @Primary是一种有效的方法，在确定一个主要候选对象时，可以通过几个实例使用自动按类型进行自动装配。当您需要对选择过程进行更多的控制时，可以使用Spring的@Qualifier注释可以将限定符值与特定的参数关联起来，缩小类型匹配的集合，以便为每个参数选择特定的bean。
 
+#### **1.9.5.使用泛型作为自动装配限定符**
+
+介绍了如何使用泛型作为自动装配限定符，它是一种隐式限定形式。
+
+**1.9.6.使用CustomAutowireConfigurer**
+
+CustomAutowireConfigurer是BeanFactoryPostProcessor，即使您没有使用Spring的@Qualifier注释来注释自己的自定义限定符注释类型，也可以使用它来注册。
+
+#### 1.9.7.注入@Resource
+
+@Resource接受一个name属性。默认情况下，Spring将该值解释为要注入的bean名。
+
+#### 1.9.8.使用@Value
+
+@Value通常用于注入外部属性
+
+#### 1.9.9.使用@PostConstruct和@PreDestroy
+
+在Spring 2.5中引入的对这些注释的支持提供了初始化回调和销毁回调中描述的生命周期回调机制的替代方法。
+
+### 1.10. Classpath Scanning and Managed Components**（**类路径扫描和托管组件**）**
+
+本章中的大多数示例都使用xml来指定生成每个元数据的配置元数据**。**
+
+#### **1.10.1. @Component和进一步的原型注释**
+
+@Component是任何Spring托管组件的通用原型**。**Spring提供了进一步的原型注释：@Component, @Service，和@Controller**。**
+
+####  **1.10.2.使用元注释和组合注释**
+
+Spring提供的许多注释都可以在您自己的代码中用作元注释。 元注释是可以应用于另一个注释的注释。 例如，前面提到的@Service注释使用@Component进行元注释**。**
+
+#### **1.10.3.自动检测类和注册Bean定义**
+
+Spring可以自动检测构造型类并注册相应的BeanDefinition实例的ApplicationContext**。**
+
+#### **1.10.4.使用过滤器自定义扫描**
+
+默认情况下，用@Component, @Repository, @Service, @Controller, @Configuration，或自定义注释本身用@Component是唯一检测到的候选组件。但是，可以通过应用自定义筛选器来修改和扩展此行为。将它们添加为includeFilters或excludeFilters属性的@ComponentScan注释\(或AS\)或的子元素元素\)。每个筛选器元素都需要type和expression属性。
+
+#### **1.10.5.在组件中定义Bean元数据**
+
+Spring组件还可以将bean定义元数据贡献给容器。 您可以使用与@Configuration注释类中的Bean元数据定义相同的@Bean注释进行此操作。
+
+#### **1.10.6.命名自动检测组件**
+
+在扫描过程中自动检测到组件时，该组件的Bean名称由该扫描程序已知的BeanNameGenerator策略生成。 默认情况下，任何包含名称值的Spring构造型注释（@ Component，@ Repository，@ Service和@Controller）都会将该名称提供给相应的bean定义。
+
+#### **1.10.7.为自动检测的组件提供作用域**
+
+通常，与Spring管理的组件一样，自动检测到的组件的默认范围也是最常见的范围是singleton（单例）。 但是，有时您需要使用@Scope注释指定其他作用域。
+
+\*\*\*\*
+
 
 
