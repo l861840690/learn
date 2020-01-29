@@ -226,7 +226,45 @@ Spring组件还可以将bean定义元数据贡献给容器。 您可以使用与
 
 #### **1.12.1.基本概念：@Bean和@Configuration**
 
+这个@Bean注释用于指示方法实例化、配置和初始化要由SpringIoC容器管理的新对象。用@Configuration指示其主要用途是作为bean定义的来源。
+
+**1.12.2.使用AnnotationConfigApplicationContext**
+
+以下各节介绍了Spring 3.0中引入的Spring的AnnotationConfigApplicationContext。 这种通用的ApplicationContext实现不仅能够接受@Configuration类作为输入，而且还可以接受普通的@Component类和带有JSR-330元数据注释的类。
+
+#### **1.12.3.使用@Bean注解**
+
+@Bean是方法级注释和xml的直接模拟。此节介绍了使用@Bean注解的详细流程。
+
+**1.12.4使用@Configuration注解**
+
+@Configuration是一个类级注释，指示对象是bean定义的源。此节介绍了如何使用该注释的详细说明。
+
+#### **1.12.5.组合基于Java的配置**
+
+Spring的基于Java的配置功能使您可以撰写注释，从而降低配置的复杂性。
+
+### 1.13.Environment Abstraction（环境抽象）
+
+这个Environment接口是一个集成在容器中的抽象，它为应用程序环境的两个关键方面建模：切面和属性。
+
+#### **1.13.1.bean** Definition Profiles**（定义概要）**
+
+bean定义概要文件在核心容器中提供了一种机制，允许在不同的环境中注册不同的bean。
+
+### **1.13.2. PropertySource\(属性源\)抽象**
+
+spring的Environment抽象在可配置的属性源层次结构上提供搜索操作。
+
+#### **1.13.3.使用@PropertySource**
+
+@PropertySource注释为将PropertySource添加到Spring的环境中提供了一种方便的声明性机制。
+
+
+
 \*\*\*\*
+
+
 
 \*\*\*\*
 
