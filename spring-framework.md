@@ -252,13 +252,31 @@ Spring的基于Java的配置功能使您可以撰写注释，从而降低配置�
 
 bean定义概要文件在核心容器中提供了一种机制，允许在不同的环境中注册不同的bean。
 
-### **1.13.2. PropertySource\(属性源\)抽象**
+#### **1.13.2. PropertySource\(属性源\)抽象**
 
 spring的Environment抽象在可配置的属性源层次结构上提供搜索操作。
 
 #### **1.13.3.使用@PropertySource**
 
 @PropertySource注释为将PropertySource添加到Spring的环境中提供了一种方便的声明性机制。
+
+#### 1.13.4. 声明中的占位符解析
+
+以前元素中占位符的值只能根据JVM系统属性或环境变量来解析。现在可以更改搜索系统属性和环境变量的优先级，也可以完全删除它们。 您还可以根据需要将自己的属性源添加到组合中。
+
+### 1.14.注册一个LoadTimeWeaver
+
+Spring使用LoadTimeWeaver在将类加载到Java虚拟机（JVM）中时对其进行动态转换。
+
+### 1.15.ApplicationContext的附加功能
+
+#### 1.15.1.使用MessageSource的国际化
+
+ApplicationContext接口扩展了一个称为MessageSource的接口，因此提供了国际化（“ i18n”）功能。 Spring还提供了HierarchicalMessageSource接口，该接口可以分层解析消息。 这些接口一起提供了Spring影响消息解析的基础。
+
+#### **1.15.2.标准和自定义事件**
+
+\*\*\*\*
 
 
 
