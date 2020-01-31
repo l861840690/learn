@@ -316,6 +316,8 @@ Spring的Resource接口旨在成为一种功能更强大的接口，用于抽象
 
 介绍了Spring内包括的Resource实现。
 
+#### 2.3.1. UrlResource
+
 
 
 
