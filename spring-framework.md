@@ -276,15 +276,49 @@ ApplicationContext接口扩展了一个称为MessageSource的接口，因此提�
 
 #### **1.15.2.标准和自定义事件**
 
-\*\*\*\*
+通过ApplicationEvent类和ApplicationListener接口提供ApplicationContext中的事件处理。此节描述了Spring提供的标准事件和一些自定义事件。
+
+#### **1.15.3.方便地访问低级别资源**
+
+描述了如何更方便地访问低级别资源的方式。
+
+#### 1.15.4.Web应用程序的便捷ApplicationContext实例化
+
+你可以创建ApplicationContext实例，例如，通过使用ContextLoader。当然，您也可以创建ApplicationContext实例以编程方式使用ApplicationContext实现。
+
+#### **1.15.5.部署SpringApplicationContext作为JavaEERAR文件**
+
+可以将Spring ApplicationContext部署为RAR文件，将上下文及其所有必需的Bean类和库JAR封装在Java EE RAR部署单元中。 这等效于引导独立的ApplicationContext（仅托管在Java EE环境中）能够访问Java EE服务器功能。
+
+### 1.16. The BeanFactory**（Bean工厂）**
+
+BeanFactory API为Spring的IoC功能提供了基础。 它的特定合同主要用于与Spring的其他部分以及相关的第三方框架集成，并且其DefaultListableBeanFactory实现是更高级别的GenericApplicationContext容器中的关键委托。
+
+#### **1.16.1. BeanFactory or ApplicationContext?**
+
+本节说明BeanFactory和ApplicationContext容器级别之间的区别以及对引导的影响。
+
+除非有充分的理由，否则应使用ApplicationContext，将GenericApplicationContext及其子类AnnotationConfigApplicationContext作为自定义引导的常见实现。
+
+因为ApplicationContext包含BeanFactory的所有功能，所以通常建议在纯BeanFactory上使用，除非需要对Bean处理的完全控制。
+
+## **2.**Resources（资源）
+
+本章介绍Spring如何处理资源以及如何在Spring中使用资源。
+
+### 2.1. Introduction（导言）
+
+### 2.2. The Resource Interface（资源接口）
+
+Spring的Resource接口旨在成为一种功能更强大的接口，用于抽象化对低级资源的访问。
+
+### 2.3. Built-in Resource Implementations（内置资源实现）
+
+介绍了Spring内包括的Resource实现。
 
 
 
-\*\*\*\*
 
-
-
-\*\*\*\*
 
 
 
