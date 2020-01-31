@@ -318,9 +318,59 @@ Spring的Resource接口旨在成为一种功能更强大的接口，用于抽象
 
 #### 2.3.1. UrlResource
 
+UrlResource包装了java.net.URL，可用于访问通常可以通过URL访问的任何对象，例如文件，HTTP目标，FTP目标等。
 
+#### 2.3.2. ClassPathResource（类路径资源）
 
+此类表示应从类路径获取的资源。 它使用线程上下文类加载器，给定的类加载器或给定的类来加载资源。
 
+#### **2.3.3. FileSystemResource**
+
+这是java.io.File和java.nio.file.Path句柄的Resource实现。 它支持解析为文件和URL。
+
+#### **2.3.4. ServletContextResource**
+
+这是ServletContext资源的Resource实现，用于解释相关Web应用程序根目录中的相对路径。
+
+#### **2.3.5. InputStreamResource**
+
+InputStreamResource是给定InputStream的Resource实现。 仅当没有特定的资源实现适用时才应使用它。 特别是，尽可能选择ByteArrayResource或任何基于文件的Resource实现。
+
+#### **2.3.6. ByteArrayResource**
+
+这是给定字节数组的Resource实现。 它为给定的字节数组创建一个ByteArrayInputStream。
+
+### 2.4. The ResourceLoader（资源加载器）
+
+ResourceLoader接口旨在由可以返回（即加载）Resource实例的对象实现。所有应用程序上下文都实现ResourceLoader接口。 因此，所有应用程序上下文都可用于获取Resource实例。
+
+### 2.5. The ResourceLoaderAware interface
+
+ResourceLoaderAware接口是一个特殊的回调接口，用于标识期望随ResourceLoader参考一起提供的组件。
+
+### 2.6. Resources as Dependencies（资源依赖）
+
+如果Bean本身将通过某种动态过程来确定并提供资源路径，那么对于Bean来说，使用ResourceLoader接口加载资源可能是有意义的。 例如，考虑加载某种模板，其中所需的特定资源取决于用户的角色。
+
+### 2.7. Application Contexts and Resource Paths（应用程序上下文和资源路径）
+
+本节介绍如何使用资源创建应用程序上下文，包括使用XML的快捷方式、如何使用通配符和其他详细信息。
+
+#### 2.7.1. Constructing Application Contexts（构造应用程序上下文）
+
+应用程序上下文构造函数（针对特定的应用程序上下文类型）通常采用字符串或字符串数组作为资源的位置路径，例如构成上下文定义的XML文件。
+
+#### **2.7.2. Wildcards in Application Context Constructor Resource Paths（**应用程序上下文构造函数资源路径中的通配符**）**
+
+应用程序上下文构造函数值中的资源路径可以是简单路径（如先前所示），每个路径都具有到目标资源的一对一映射，或者可以包含特殊的“ classpath \*：”前缀或内部Ant。 样式的正则表达式（通过使用Spring的PathMatcher实用程序进行匹配）。 后者都是有效的通配符。此节介绍了如何去使用通配符。
+
+#### **2.7.3. FileSystemResource Caveats（警告）**
+
+未附加到FileSystemApplicationContext的FileSystemResource（即，当FileSystemApplicationContext不是实际的ResourceLoader时）将按您期望的那样处理绝对路径和相对路径。 相对路径是相对于当前工作目录的，而绝对路径是相对于文件系统的根的。
+
+## **3.**Validation, Data Binding, and Type Conversion（验证、数据绑定和类型转换）
+
+### 3.1. Validation by Using Spring’s Validator Interface（使用Spring的Validator接口进行验证）
 
 
 
