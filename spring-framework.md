@@ -372,5 +372,51 @@ ResourceLoaderAware接口是一个特殊的回调接口，用于标识期望随R
 
 ### 3.1. Validation by Using Spring’s Validator Interface（使用Spring的Validator接口进行验证）
 
+Spring具有Validator接口，可用于验证对象。 Validator接口通过使用Errors对象工作，以便在验证时，验证器可以将验证失败报告给Errors对象。
 
+### 3.2. Resolving Codes to Error Messages（将代码解析为错误消息）
+
+本节介绍与验证错误相对应的输出消息。
+
+### 3.3. Bean Manipulation and the BeanWrapper（Bean操作和BeanWrapper）
+
+这个org.springframework.beans包遵循JavaBeans标准。bean包中一个非常重要的类是BeanWrapper接口及其相应的实现\(BeanWrapperImpl\)。
+
+#### **3.3.1.设置和获取基本属性和嵌套属性**
+
+设置和获取属性是通过使用setPropertyValue, setPropertyValues, getPropertyValue，和getPropertyValues方法，这些方法带有几个重载变体。Spring javadoc更详细地描述了它们。
+
+#### 3.3.2.内置的PropertyEditor实现
+
+Spring使用的概念是PropertyEditor之间的转换。Object和一个String。可以方便地以不同于对象本身的方式表示属性。
+
+### 3.4. Spring Type Conversion**（spring类型转换）**
+
+Spring 3引入了core.convert包，该包提供了通用的类型转换系统。 该系统定义了一个用于实现类型转换逻辑的SPI和一个用于在运行时执行类型转换的API。 在Spring容器中，可以使用此系统作为PropertyEditor实现的替代方法，以将外部化的bean属性值字符串转换为所需的属性类型。 您还可以在应用程序中需要类型转换的任何地方使用公共API。
+
+#### **3.4.1. Converter SPI（**转换器SPI**）**
+
+用于实现类型转换逻辑的SPI非常简单且类型严格。要创建自己的转换器，请实现Converter接口，并将S设置为要转换的类型，并将T设置为要转换的类型。
+
+#### 3.4.2. Using ConverterFactory（使用ConverterFactory）
+
+当需要集中整个类层次结构的转换逻辑时（例如，从String转换为Enum对象时），可以实现ConverterFactory。
+
+#### 3.4.3. Using GenericConverter（使用GenericConverter）
+
+当您需要复杂的Converter实现时，请考虑使用GenericConverter接口。 与Converter相比，GenericConverter具有比Converter更灵活但类型不太强的签名，支持在多种源类型和目标类型之间进行转换。
+
+**3.4.4. The ConversionService API**
+
+ConversionService定义了一个统一的API，用于在运行时执行类型转换逻辑。
+
+####  **3.4.5. Configuring a ConversionService（**配置ConversionService**）**
+
+ConversionService是无状态对象，旨在在应用程序启动时实例化，然后在多个线程之间共享。
+
+####  **3.4.6. Using a ConversionService Programmatically**（以编程方式使用ConversionService）
+
+要以编程方式使用ConversionService实例，可以像对待其他任何bean一样注入对该实例的引用。
+
+### 3.5. Spring Field Formatting（Spring字段格式）
 
