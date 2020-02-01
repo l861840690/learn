@@ -510,7 +510,209 @@ Spring Framework 4.1包含一个基本的表达式编译器。通常对表达式
 
 此小节介绍了它们的用法。
 
+#### **4.3.3. Inline Lists（**内联列表**）**
 
+您可以使用{}符号在表达式中直接表达列表。
+
+#### **4.3.4. Inline Maps（**内联映射**）**
+
+也可以使用{key:value}符号直接在表达式中表示映射。
+
+**4.3.5. Array Construction（队列结构）**
+
+您可以使用熟悉的Java语法构建数组，还可以选择提供一个初始值设定项，以便在构建时填充数组。
+
+**4.3.6. Methods（方法）**
+
+您可以使用典型的Java编程语法来调用方法。还可以对文本调用方法。也支持变量参数。
+
+**4.3.7. Operators（运算符）**
+
+本小节描述了Spring表达式语言支持的几种运算符。
+
+#### **4.3.8. Types（**种类**）**
+
+您可以使用特殊的T运算符来指定java.lang.Class（类型）的实例。
+
+**4.3.9. Constructors（构造器）**
+
+您可以使用new运算符来调用构造方法。
+
+**4.3.10. Variables（变量）**
+
+可以使用variableName语法引用表达式中的变量。变量是通过对EvaluationContext实现使用setVariable方法设置的**。**
+
+**4.3.11. Functions（功能）**
+
+通过注册可在表达式字符串中调用的用户定义函数，可以扩展SpEL。函数是通过EvaluationContext注册的。
+
+#### **4.3.12. Bean References（**Bean引用**）**
+
+如果已使用bean解析器配置求值上下文，则可以使用@符号从表达式中查找bean**。**
+
+**4.3.13. Ternary Operator \(If-Then-Else，三元运算符\)**
+
+可以使用三元运算符在表达式中执行if-then-else条件逻辑。
+
+**4.3.14. The Elvis Operator（Elvis操作符）**
+
+Elvis运算符是三元运算符语法的一种简化，在Groovy语言中使用。
+
+**4.3.15. Safe Navigation Operator（Safe Navigation运算符）**
+
+safe navigation操作符用于避免NullPointerException，它来自Groovy语言。
+
+**4.3.16. Collection Selection（集合选择）**
+
+Selection是一种强大的表达语言功能，可让您通过从源集合中进行选择来将其转换为另一个集合。
+
+**4.3.17. Collection Projection（集合投影）**
+
+投影允许集合驱动子表达式的求值，结果是一个新集合。投影的语法是。！\[投影表达式\]。
+
+**4.3.18. Expression templating（表达式模板化）**
+
+表达式模板允许将文字文本与一个或多个评估块混合。 每个评估块都由您可以定义的前缀和后缀字符定界。
+
+### 4.4. Classes Used in the Examples**（**示例中使用的类**）**
+
+本节列出了本章示例中使用的类。
+
+## 5. Aspect Oriented Programming with Spring（Spring面向切面编程）
+
+面向切面编程（AOP）通过提供另一种思考程序结构的方式，补充了面向对象编程（OOP）。在OOP中，模块化的关键单元是类，而在AOP中，模块化的单元是方面。方面支持跨多个类型和对象的关注点（如事务管理）的模块化。
+
+### 5.1. AOP Concepts（AOP概念）
+
+让我们首先定义一些核心AOP概念和术语。这些术语不是Spring特有的。不幸的是，AOP术语并不是特别直观。然而，如果Spring使用自己的术语，则会更加混乱。
+
+### 5.2. Spring AOP Capabilities and Goals（Spring AOP的能力和目标）
+
+Spring AOP是用纯Java实现的。不需要特殊的编译过程。Spring AOP不需要控制类装入器层次结构，因此适合在servlet容器或应用程序服务器中使用。
+
+### 5.3. AOP Proxies（AOP代理）
+
+Spring AOP默认将标准JDK动态代理用于AOP代理。 这使得可以代理任何接口（或一组接口）。
+
+### 5.4. @AspectJ support（@AspectJ 支持）
+
+@AspectJ指的是一种将方面声明为带有注释的常规Java类的样式。
+
+#### **5.4.1. Enabling @AspectJ Support（**启用@AspectJ支持**）**
+
+要在Spring配置中使用@AspectJ方面，您需要启用Spring支持，以便基于@AspectJ方面配置Spring AOP，并根据这些方面是否建议使用自动代理bean。
+
+**5.4.2. Declaring an Aspect（声明一个切面）**
+
+启用@AspectJ支持后，Spring会自动检测应用程序上下文中定义的具有@AspectJ方面（具有@aspect注释）的类的任何bean，并将其用于配置Spring AOP。
+
+**5.4.3. Declaring a Pointcut（声明切入点）**
+
+切入点确定了关注的连接点，从而使我们能够控制执行建议的时间。 Spring AOP仅支持Spring Bean的方法执行连接点，因此您可以将切入点视为与Spring Bean上的方法执行匹配。
+
+**5.4.4. Declaring Advice（声明通知）**
+
+通知与切入点表达式关联，并在与切入点匹配的方法执行之前、之后或周围运行。切入点表达式可以是对命名切入点的简单引用，也可以是就地声明的切入点表达式。
+
+**5.4.5. Introductions（简介）**
+
+简介（在AspectJ中称为类型间声明）使切面可以声明通知对象实现给定的接口，并代表那些对象提供该接口的实现。
+
+#### **5.4.6. Aspect Instantiation Models（切面实例化模型）**
+
+默认情况下，应用程序上下文中每个方面都有一个实例。AspectJ称之为单例实例化模型。可以用交替的生命周期定义方面。
+
+#### **5.4.7. An AOP Example（**AOP示例**）**
+
+练习前几节的AOP工作原理，此节把它们组合起来做了一个AOP示例。
+
+### 5.5. Schema-based AOP Support（基于模式的AOP支持）
+
+如果您喜欢基于XML的格式，Spring还支持使用新的aop名称空间标记定义方面。支持与使用@AspectJ样式时完全相同的切入点表达式和建议类型。因此，在本节中，我们将重点放在新语法上，并使读者参考上一节中的讨论（@AspectJ支持），以了解编写切入点表达式和建议参数的绑定。
+
+#### **5.5.1. Declaring an Aspect**（声明一个切面）
+
+使用模式支持时，方面是在Spring应用程序上下文中定义为bean的常规Java对象。状态和行为在对象的字段和方法中捕获，切入点和建议信息在XML中捕获。
+
+**5.5.2. Declaring a Pointcut（声明切入点）**
+
+您可以在元素中声明一个命名的切入点，让切入点定义在多个方面和顾问之间共享。
+
+**5.5.3. Declaring Advice（声明通知）**
+
+基于模式的AOP支持使用与@AspectJ样式相同的五种通知，并且它们具有完全相同的语义。
+
+**5.5.4. Introductions（简介）**
+
+简介（在AspectJ中称为类型间声明）允许方面声明建议的对象实现给定的接口，并代表这些对象提供该接口的实现。
+
+**5.5.5. Aspect Instantiation Models（切面实例化模型）**
+
+模式定义方面唯一支持的实例化模型是singleton模型。其他实例化模型可能在将来的版本中得到支持。
+
+**5.5.6. Advisors（顾问）**
+
+“advisors”的概念来自于Spring中定义的AOP支持，在AspectJ中没有直接的等价物。顾问就像一个独立的小方面，只有一条建议。通知本身由bean表示，并且必须实现在Spring的通知类型中描述的其中一个通知接口。顾问可以利用AspectJ切入点表达式。
+
+**5.5.7. An AOP Schema Example（AOP模式示例）**
+
+本节展示了使用模式支持重写AOP示例时并发锁定失败重试示例的外观。
+
+### 5.6. Choosing which AOP Declaration Style to Use**（**选择要使用的AOP声明样式**）**
+
+一旦确定切面是实现给定需求的最佳方法，您如何在使用Spring AOP或AspectJ以及在Aspect语言（代码）样式，@ AspectJ批注样式或Spring XML样式之间做出选择？ 这些决定受许多因素影响，包括应用程序需求，开发工具和团队对AOP的熟悉程度。
+
+#### 5.6.1. Spring AOP or Full AspectJ?（Spring AOP还是Full AspectJ？）
+
+用最简单的方法。Spring AOP比使用完整的AspectJ更简单，因为不需要在开发和构建过程中引入AspectJ编译器/编织器。
+
+#### 5.6.2. @AspectJ or XML for Spring AOP?（@AspectJ还是Spring AOP的XML？）
+
+如果您选择使用Spring AOP，那么可以选择@AspectJ或XML样式。XML样式可能是现有Spring用户最熟悉的，并且它是由真正的POJOs支持的。
+
+### 5.7. Mixing Aspect Types（混合切面类型）
+
+完全可以通过使用自动代理支持、模式定义的AOP:Aspect&gt;方面、“AOP：Advor”声明的顾问，甚至在同一配置中其他样式的代理和拦截器来混合@ AspectJ风格方面。
+
+### 5.8. Proxying Mechanisms（代理机制）
+
+Spring AOP使用JDK动态代理或CGLIB来为给定的目标对象创建代理。JDK动态代理被内置到JDK中，而CGLIB是一个常见的开源类定义库（重新打包成Spring Core）。
+
+#### **5.8.1. Understanding AOP Proxies（**了解AOP代理**）**
+
+Spring AOP是基于代理的。在编写自己的方面或使用Spring框架提供的任何基于Spring AOP的方面之前，掌握最后一条语句的实际含义是非常重要的。
+
+### 5.9. Programmatic Creation of @AspectJ Proxies**（**@AspectJ代理程序的创建**）**
+
+除了使用“&lt;AOP:CONFIG&gt;或&lt;AOP:AspectJ AutoPosixServer”来声明配置中的方面之外，还可以以编程方式创建建议目标对象的代理。
+
+### 5.10. Using AspectJ with Spring Applications（在Spring应用程序中使用AspectJ）
+
+在本节中，我们将介绍如何使用AspectJ编译器或weaver，如果您的需求超出了Spring AOP所提供的功能范围，则可以代替springaop或除了springaop之外使用它。
+
+####  **5.10.1. Using AspectJ to Dependency Inject Domain Objects with Spring（**使用AspectJ通过Spring依赖注入域对象**）**
+
+Spring容器实例化并配置在您的应用程序上下文中定义的bean。 给定包含要应用的配置的Bean定义的名称，也可以要求Bean工厂配置预先存在的对象。
+
+####  **5.10.2. Other Spring aspects for AspectJ（**AspectJ的其他Spring方面**）**
+
+除了@Configurable方面之外，spring-aspects.jar还包含一个AspectJ方面，您可以使用该方面来驱动Spring的事务管理，以使用@Transactional批注来批注类型和方法。
+
+#### **5.10.3. Configuring AspectJ Aspects by Using Spring IoC（**使用Spring IoC配置AspectJ Aspects**）**
+
+AspectJ运行时本身负责切面的创建，通过Spring配置AspectJ创建的切面的方法取决于切面使用的AspectJ实例化模型（per-xxx子句）。
+
+#### **5.10.4. Load-time Weaving with AspectJ in the Spring Framework（**在Spring Framework中使用AspectJ进行加载时编织**）**
+
+加载时编织（LTW）是指当AspectJ方面被加载到Java虚拟机（JVM）中时，将其编织到应用程序的类文件中的过程。
+
+### 5.11. Further Resources**（**更多信息**）**
+
+有关AspectJ的更多信息，需要访问AspectJ网站。
+
+## 6. Spring AOP APIs
+
+在本章中，我们将讨论较低级别的Spring AOP api。对于常见的应用程序，我们建议将Spring AOP与AspectJ切入点结合使用。
 
 
 
