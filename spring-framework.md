@@ -420,3 +420,97 @@ ConversionService是无状态对象，旨在在应用程序启动时实例化，
 
 ### 3.5. Spring Field Formatting（Spring字段格式）
 
+通常，当您需要实现通用类型转换逻辑时（例如，用于在java.util.Date和Long之间进行转换），可以使用Converter SPI。 在客户端环境（例如Web应用程序）中工作并且需要解析和打印本地化的字段值时，可以使用Formatter SPI。 ConversionService为两个SPI提供统一的类型转换API。
+
+#### 3.5.1. The Formatter SPI（格式化器SPI）
+
+用于实现字段格式化逻辑的Formatter SPI非常简单且类型严格。此小节给出了显示了Formatter接口定义的详细示例。
+
+#### **3.5.2. Annotation-driven Formatting（**注释驱动的格式**）**
+
+可以通过字段类型或注释配置字段格式。 要将注释绑定到Formatter，需要实现AnnotationFormatterFactory。
+
+#### **3.5.3. The FormatterRegistry SPI**
+
+FormatterRegistry是用于注册格式器和转换器的SPI。
+
+#### **3.5.4. The FormatterRegistrar SPI**
+
+FormatterRegistrar是一个SPI，用于通过FormatterRegistry注册格式器和转换器。
+
+#### **3.5.5. Configuring Formatting in Spring MVC（**在Spring MVC中配置格式**）**
+
+参见Spring MVC一章中的转换和格式化
+
+### 3.6. Configuring a Global Date and Time Format**（**配置全局日期和时间格式**）**
+
+默认情况下，未使用@DateTimeFormat注释的日期和时间字段是使用DateFormat.SHORT样式从字符串转换的。如果愿意，可以通过定义自己的全局格式来更改此设置。
+
+### 3.7. Spring Validation（Spring验证）
+
+Spring 3对其验证支持进行了一些增强。 首先，完全支持JSR-303 Bean验证API。 其次，以编程方式使用时，Spring的DataBinder可以验证对象并绑定到对象。 第三，Spring MVC支持声明式验证@Controller输入。
+
+#### **3.7.1. Overview of the JSR-303 Bean Validation API（**JSR-303 Bean验证API概述**）**
+
+JSR-303标准化了Java平台的验证约束声明和元数据。 通过使用此API，您可以使用声明性验证约束来注释域模型属性，并且运行时会强制执行它们。
+
+#### **3.7.2. Configuring a Bean Validation Provider（**配置Bean验证提供程序**）**
+
+Spring提供了对Bean验证API的全面支持。 这包括对将JSR-303或JSR-349 Bean验证提供程序引导为Spring Bean的便捷支持。这样，您可以在应用程序中需要验证的任何地方注入javax.validation.ValidatorFactory或javax.validation.Validator。
+
+#### **3.7.3. Configuring a DataBinder（**配置一个DataBinder**）**
+
+从Spring 3开始，您可以使用Validator配置DataBinder实例。配置完成后，您可以通过调用binder.validate（）来调用Validator。任何验证错误都会自动添加到活页夹的BindingResult中。
+
+#### **3.7.4. Spring MVC 3 Validation（**Spring MVC 3验证**）**
+
+参见Spring MVC一章中的验证。
+
+## 4. Spring Expression Language \(SpEL**，Spring表达式语言**\)
+
+Spring表达式语言（简称“ SpEL”）是一种功能强大的表达式语言，支持在运行时查询和操作对象图。 语言语法类似于Unified EL，但是提供了其他功能，最著名的是方法调用和基本的字符串模板功能。
+
+### 4.1. Evaluation（评估）
+
+本节介绍SpEL接口及其表达语言的简单用法。 完整的语言参考可以在“语言参考”中找到。
+
+#### **4.1.1. Understanding EvaluationContext（了解评估上下文）**
+
+在评估表达式以解析属性，方法或字段并帮助执行类型转换时，使用EvaluationContext接口。 本节介绍了Spring提供的两种实现。
+
+#### **4.1.2. Parser Configuration（**解析器配置**）**
+
+可以通过使用解析器配置对象（org.springframework.expression.spel.SpelParserConfiguration）配置SpEL表达式解析器。 
+
+#### **4.1.3. SpEL Compilation（**SpEL编译**）**
+
+Spring Framework 4.1包含一个基本的表达式编译器。通常对表达式进行解释，这在评估过程中提供了很大的动态灵活性，但没有提供最佳性能。
+
+### 4.2. Expressions in Bean Definitions**（**Bean定义中的表达式**）**
+
+您可以将SpEL表达式与基于XML或基于注释的配置元数据一起使用，以定义BeanDefinition实例。 在这两种情况下，用于定义表达式的语法都采用＃{&lt;表达式字符串&gt;}的形式。
+
+#### **4.2.1. XML Configuration（**XML配置**）**
+
+可以使用表达式来设置属性或构造函数参数值，此小节给出了详细的示例。
+
+**4.2.2. Annotation Configuration（注释配置）**
+
+若要指定默认值，可以将@Value批注放置在字段，方法以及方法或构造函数参数上。
+
+### 4.3. Language Reference**（**语言参考**）**
+
+本节描述了Spring Expression Language的工作方式。
+
+#### **4.3.1. Literal Expressions（文字表达）**
+
+支持的文字表达式的类型为字符串，数值（int，实数，十六进制），布尔值和null。 字符串由单引号引起来。 要将单引号本身放在字符串中，请使用两个单引号字符。
+
+#### **4.3.2. Properties, Arrays, Lists, Maps, and Indexers（**属性，数组，列表，映射和索引器**）**
+
+此小节介绍了它们的用法。
+
+
+
+
+
