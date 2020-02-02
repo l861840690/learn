@@ -786,3 +786,84 @@ Spring提供了几种通知类型，并且可以扩展以支持任意通知类�
 
 通过在拦截器名称后附加一个星号，所有具有与该星号之前的部分匹配的Bean名称的顾问程序都将添加到顾问程序链中。
 
+### 6.5. Concise Proxy Definitions（简洁的代理定义）
+
+使用父子bean定义和子bean定义以及内部bean定义可以使代理定义更加简洁明了。
+
+### 6.6. Creating AOP Proxies Programmatically with the ProxyFactory（使用ProxyFactory以编程方式创建AOP代理）
+
+使用Spring以编程方式创建AOP代理很容易。 这使您可以使用Spring AOP，而无需依赖Spring IoC。
+
+### 6.7. Manipulating Advised Objects（操作通知对象）
+
+创建AOP代理时，可以使用Or.SrpFrrasWork.Aop.FrasWork.Debug接口来操作AOP代理。任何AOP代理都可以强制转换到此接口，不管它实现的是哪个接口。
+
+### 6.8. Using the "auto-proxy" facility（使用“自动代理”功能）
+
+Spring允许我们使用“自动代理” Bean定义，该定义可以自动代理选定的Bean定义。 它基于Spring的“ bean后处理器”基础架构，可在容器加载时修改任何bean定义。
+
+#### **6.8.1. Auto-proxy Bean Definitions（**自动代理Bean定义**）**
+
+本节介绍了org.springframework.aop.framework.autoproxy包提供的自动代理创建者。
+
+### 6.9. Using TargetSource Implementations**（**使用TargetSource实现**）**
+
+Spring提供了TargetSource的概念，以org.springframework.aop.TargetSource接口表示。 该接口负责返回实现连接点的“目标对象”。 每当AOP代理处理方法调用时，都会向TargetSource实现请求目标实例。
+
+#### **6.9.1. Hot-swappable Target Sources（**可热交换的目标源**）**
+
+org.springframework.aop.target.HotSwappableTargetSource的存在是为了允许AOP代理的目标切换，同时允许调用者保留对其的引用。
+
+  
+**6.9.2. Pooling Target Sources（池化目标源）**
+
+使用池目标源提供了与无状态会话EJB相似的编程模型，在无状态会话EJB中，维护了相同实例的池，并且方法调用将释放池中的对象。
+
+#### **6.9.3. Prototype Target Sources（**原型目标源**）**
+
+设置“原型”目标源类似于设置池化TargetSource。 在这种情况下，每次方法调用都会创建目标的新实例。
+
+#### **6.9.4. ThreadLocal Target Sources（**ThreadLocal目标源**）**
+
+如果需要为每个传入请求（即每个线程）创建对象，则ThreadLocal目标源非常有用。ThreadLocal的概念提供了一个JDK范围的工具，可以透明地将资源存储在线程旁边。
+
+### 6.10. Defining New Advice Types**（**定义新的通知类型**）**
+
+Spring AOP被设计为可扩展的。 尽管目前在内部使用拦截实现策略，但是除了在通知周围，在通知之前，抛出通知和返回通知之后进行拦截之外，还可以支持任意通知类型。
+
+## 7.Null-safety（空安全）
+
+尽管Java不允许用它的类型系统来表示空安全性，但是Spring框架现在在org.Spring Framework.lang包中提供了一些本节种介绍的注释，允许您声明API和字段的空性。
+
+### 7.1. Use cases（用例）
+
+除了为Spring Framework API可空性提供显式声明外，IDE（例如IDEA或Eclipse）还可以使用这些批注提供与空安全有关的有用警告，以避免在运行时出现NullPointerException。
+
+### 7.2. JSR-305 meta-annotations（JSR-305元注释）
+
+Spring注释使用JSR 305注释（休眠但广泛使用的JSR）进行元注释。JSR-305元注释使工具供应商（如IDEA或Kotlin）以通用方式提供了空安全支持，而无需对Spring注释进行硬编码支持。
+
+## 8. Data Buffers and Codecs（数据缓冲区和编解码器）
+
+Java NIO提供了ByteBuffer，但是许多库在顶部构建了自己的字节缓冲区API，特别是对于网络操作，其中重用缓冲区和/或使用直接缓冲区对性能有利。
+
+### 8.1. DataBufferFactory（数据缓冲区工厂）
+
+DataBufferFactory用于通过两种本节介绍的方式之一创建数据缓冲区。
+
+### 8.2. DataBuffer（数据缓冲区）
+
+DataBuffer接口提供了与java.nio.ByteBuffer类似的操作，但也带来了一些额外的好处，其中一些好处是受到Netty ByteBuf的启发。本节介绍了这些好处的详细信息。
+
+### 8.3. PooledDataBuffer（池数据缓冲区）
+
+正如Javadoc for ByteBuffer中所解释的，字节缓冲区可以是直接的，也可以是非直接的。直接缓冲区可以位于Java堆之外，这样就无需复制本机I/O操作。这使得直接缓冲区对于通过套接字接收和发送数据特别有用，但是它们的创建和发布成本也更高，这就产生了缓冲区池的想法。
+
+### 8.4. DataBufferUtils（数据库缓冲）
+
+\*\*\*\*
+
+
+
+
+
