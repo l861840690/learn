@@ -861,9 +861,76 @@ DataBuffer接口提供了与java.nio.ByteBuffer类似的操作，但也带来了
 
 ### 8.4. DataBufferUtils（数据库缓冲）
 
+本节介绍了DataBufferUtils提供的许多在数据缓冲区上操作的实用方法。
+
+### 8.5. Codecs（编解码器）
+
+org.springframework.core.codec包提供以下策略接口：
+
+Encoder（编码器），用于将Publisher 编码为数据缓冲区流。
+
+Decoder（解码器），用于将Publisher 解码为更高级别的对象流。
+
+### 8.6. Using DataBuffer（使用DataBuffer）
+
+使用数据缓冲区时，必须特别小心以确保释放缓冲区，因为它们可能会被合并。本节介绍了编解码器必须在内部执行哪些操作来管理数据缓冲区。
+
+## 9. Appendix（附录）
+
+### 9.1. XML Schemas（XML架构）
+
+附录的此部分列出了与核心容器相关的XML模式。
+
+#### 9.1.1. The util Schema（**util**架构）
+
+顾名思义，util标签处理常见的实用程序配置问题，例如配置集合，引用常量等。要在util模式中使用标签，您需要在Spring XML配置文件的顶部具有本节中示例的序言（代码段中的文本引用了正确的模式，以便您可以使用util名称空间中的标签）。
+
+#### **9.1.2. The aop Schema（aop**架构**）**
+
+aop标签用于配置Spring中的所有AOP，包括Spring自己的基于代理的AOP框架以及Spring与AspectJ AOP框架的集成。 这些标签在标题为“面向方面的Spring编程”的章节中全面介绍。
+
+#### **9.1.3. The context Schema（上下文**架构**）**
+
+上下文标记处理与管道相关的ApplicationContext配置-即通常不是对最终用户重要的bean，而是在Spring中完成大量“艰巨”工作的bean，例如BeanfactoryPostProcessors。本节给出了引用了正确的架构的示例代码段，以便您可以使用上下文名称空间中的元素。
+
+#### 9.1.4. The Beans Schema（Bean架构）
+
+最后但并非最不重要的一点是，我们在bean模式中具有元素。 自框架刚诞生以来，这些元素就一直出现在Spring。 本节未显示Bean模式中各种元素的示例，因为它们在依赖关系和配置中非常全面地涵盖了它们（实际上，在整章中也是如此）。
+
+### 9.2. XML Schema Authoring（XML架构创作）
+
+从2.0版开始，Spring提供了一种机制，该机制可将基于架构的扩展添加到基本Spring XML格式中，以定义和配置bean。 本节介绍如何编写自己的自定义XML Bean定义解析器，以及如何将此类解析器集成到Spring IoC容器中。
+
+#### 9.2.1. Authoring the Schema（编写架构）
+
+创建一个XML配置扩展以用于Spring的IoC容器首先要编写一个XML模式来描述扩展。本小节示例了如何配置SimpleDateFormat对象。
+
+**9.2.2. Coding a NamespaceHandler（编写命名空间处理程序）**
+
+除了模式之外，我们还需要一个NamespaceHandler来解析Spring在解析配置文件时遇到的这个特定名称空间的所有元素。
+
+  
+**9.2.3. Using BeanDefinitionParser（使用BeanDefinitionParser）**
+
+如果NamespaceHandler遇到已映射到特定bean定义解析器的类型的XML元素（本例中为dateformat），则使用bean definition parser。换句话说，BeanDefinitionParser负责解析模式中定义的一个不同的顶级XML元素。
+
+**9.2.4. Registering the Handler and the Schema（注册处理程序和架构）**
+
+编码完成。剩下要做的就是让Spring XML解析基础设施了解我们的自定义元素。我们通过在两个特殊用途的属性文件中注册自定义名称空间处理程序和自定义XSD文件来实现这一点。
+
+#### **9.2.5. Using a Custom Extension in Your Spring XML Configuration（**在Spring XML配置中使用自定义扩展**）**
+
+使用您自己实现的自定义扩展与使用Spring提供的“自定义”扩展没有什么不同。本小节示例使用在Spring XML配置文件中的前面步骤中开发的自定义&lt;dateformat/&gt;元素。
+
+#### **9.2.6. More Detailed Examples（更详细的例子）**
+
+本节介绍一些更详细的自定义XML扩展示例**。**
+
 \*\*\*\*
 
 
 
 
+
+\*\*\*\*
 
