@@ -714,5 +714,75 @@ AspectJ运行时本身负责切面的创建，通过Spring配置AspectJ创建的
 
 在本章中，我们将讨论较低级别的Spring AOP api。对于常见的应用程序，我们建议将Spring AOP与AspectJ切入点结合使用。
 
+### 6.1. Pointcut API in Spring（Spring中的切入点API）
 
+本节描述Spring如何处理关键的切入点概念。
+
+**6.1.1. Concepts（概念）**
+
+Spring的切入点模型使切入点重用不受建议类型的影响。 您可以使用相同的切入点来定位不同的通知。
+
+#### **6.1.2. Operations on Pointcuts（**切入点的操作**）**
+
+Spring支持切入点上的操作（特别是联合和相交）。联合表示两个切入点都匹配的方法。 相交是指两个切入点都匹配的方法。您可以通过使用org.springframework.aop.support.Pointcuts类中的静态方法或使用同一包中的ComposablePointcut类来编写切入点。 但是，使用AspectJ切入点表达式通常是一种更简单的方法。
+
+#### **6.1.3. AspectJ Expression Pointcuts（**AspectJ表达切入点**）**
+
+从2.0开始，Spring使用的最重要的切入点类型是org.springframework.aop.aspectj.AspectJExpressionPointcut。 这是一个切入点，该切入点使用AspectJ提供的库来解析AspectJ切入点表达式字符串。有关支持的AspectJ切入点原语的讨论，请参见上一章。
+
+#### **6.1.4. Convenience Pointcut Implementations（**便捷切入点实现**）**
+
+Spring提供了几种方便的切入点实现。 您可以直接使用其中一些。 其他的则应归入特定于应用程序的切入点中。
+
+#### **6.1.5. Pointcut Superclasses（**切入点超类**）**
+
+Spring提供了有用的切入点超类，以帮助您实现自己的切入点。
+
+#### **6.1.6. Custom Pointcuts（**自定义切入点**）**
+
+由于Spring AOP中的切入点是Java类，而不是语言功能（如AspectJ），因此可以声明自定义切入点，无论是静态还是动态。Spring中的自定义切入点可以任意复杂。 但是，如果可以的话，我们建议使用AspectJ切入点表达语言。
+
+### 6.2. Advice API in Spring**（Spring通知API）**
+
+现在，我们可以检查Spring AOP如何处理通知。
+
+#### **6.2.1. Advice Lifecycles（通知**生命周期**）**
+
+每个通知都是一个Spring bean。 通知实例可以在所有通知对象之间共享，或者对于每个通知对象都是唯一的。 这对应于每个班级或每个实例的通知。
+
+**6.2.2. Advice Types in Spring（Spring通知类型）**
+
+Spring提供了几种通知类型，并且可以扩展以支持任意通知类型。 本节介绍基本概念和标准通知类型。
+
+### 6.3. The Advisor API in Spring（Spring的顾问 API）
+
+在Spring中，顾问程序是一个切面，仅包含与切入点表达式关联的单个通知对象。
+
+### 6.4. Using the ProxyFactoryBean to Create AOP Proxies（使用ProxyFactoryBean创建AOP代理）
+
+如果您将Spring IoC容器（ApplicationContext或BeanFactory）用于您的业务对象（应该是！），则要使用Spring的AOP FactoryBean实现之一。 （请记住，工厂bean引入了一个间接层，使它可以创建其他类型的对象。）
+
+**6.4.1. Basics（基础）**
+
+像其他Spring FactoryBean实现一样，ProxyFactoryBean引入了一个间接级别。如果定义一个名为foo的ProxyFactoryBean，则引用foo的对象将看不到ProxyFactoryBean实例本身，而是看到由ProxyFactoryBean中的getObject（）方法的实现创建的对象。
+
+**6.4.2. JavaBean Properties（JavaBean属性）**
+
+与Spring随附的大多数FactoryBean实现一样，ProxyFactoryBean类本身就是JavaBean。
+
+#### **6.4.3. JDK- and CGLIB-based proxies（**基于JDK和CGLIB的代理**）**
+
+本部分是有关ProxyFactoryBean如何选择为特定目标对象（将被代理）创建基于JDK的代理或基于CGLIB的代理的权威性文档。
+
+**6.4.4. Proxying Interfaces（代理接口）**
+
+此小节演示了一个简单的ProxyFactoryBean操作示例。
+
+**6.4.5. Proxying Classes（代理类）**
+
+想象一下，在我们之前的示例中，没有Person接口。我们需要通知一个名为Person的类，该类没有实现任何业务接口。在这种情况下，您可以将Spring配置为使用CGLIB代理而不是动态代理。
+
+#### 6.4.6. Using “Global” Advisors（使用“全球”顾问）
+
+通过在拦截器名称后附加一个星号，所有具有与该星号之前的部分匹配的Bean名称的顾问程序都将添加到顾问程序链中。
 
