@@ -78,5 +78,15 @@ Spring Boot自动配置尝试根据您添加的jar依赖项自动配置Spring应
 
 ## 5. Spring Beans and Dependency Injection（SpringBeans和依赖注入）
 
+您可以自由使用任何标准的Spring框架技术来定义bean及其注入的依赖项。为了简单起见，我们经常发现使用@ComponentScan（来查找bean）和使用@Autowired（来进行构造函数注入）可以很好地工作。
+
+## 6. Using the @SpringBootApplication Annotation（使用@springbootsapplication注释）
+
+许多Spring Boot开发人员喜欢他们的应用程序使用自动配置、组件扫描，并且能够在他们的“应用程序类”上定义额外的配置。本节介绍了如何启用这些功能的注释。
+
+## 7. Running Your Application（运行应用程序）
+
+
+
 
 
