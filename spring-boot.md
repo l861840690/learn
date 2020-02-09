@@ -44,3 +44,39 @@ Starters是一组方便的依赖关系描述符，可以包含在应用程序中
 
 Spring Boot不需要任何特定的代码布局就可以工作。然而，有一些最佳实践是有帮助的。
 
+### 2.1. Using the “default” Package（使用“默认”包）
+
+当类不包含程序包声明时，将其视为在“默认程序包”中。 通常不建议使用“默认程序包”，应避免使用。
+
+### 2.2. Locating the Main Application Class（找到主要的应用程序类别）
+
+我们通常建议您将主应用程序类放在其他类之上的根包中。 @SpringBootApplication批注通常放在您的主类上，它隐式定义某些项目的基本“搜索包”。
+
+##  3. Configuration Classes（配置类）
+
+Spring Boot支持基于Java的配置。 尽管可以将SpringApplication与XML源一起使用，但是我们通常建议您的主要源为单个@Configuration类。 通常，定义main方法的类是首选的@Configuration。
+
+### 3.1. Importing Additional Configuration Classes（导入其他配置类）
+
+您不必将所有的@Configuration放在一个类中。@Import注释可用于导入其他配置类。或者，您可以使用@components can自动获取所有Spring组件，包括@Configuration类。
+
+### 3.2. Importing XML Configuration（导入XML配置）
+
+如果您绝对必须使用基于XML的配置，我们建议您仍然从@configuration类开始。然后可以使用@importersource注释加载XML配置文件。
+
+## 4. Auto-configuration（自动配置）
+
+Spring Boot自动配置尝试根据您添加的jar依赖项自动配置Spring应用程序。例如，如果HSQLDB在您的类路径上，并且您没有手动配置任何数据库连接bean，那么Spring Boot将自动配置内存中的数据库。
+
+### 4.1. Gradually Replacing Auto-configuration（逐渐取代自动配置）
+
+自动配置是非侵入性的。在任何时候，您都可以开始定义自己的配置来替换自动配置的特定部分。例如，如果您添加了自己的数据源bean，那么默认的嵌入式数据库支持就会消失。
+
+### 4.2. Disabling Specific Auto-configuration Classes（禁用特定的自动配置类）
+
+如果发现正在应用不需要的特定自动配置类，则可以使用@EnableAutoConfiguration的exclude属性禁用它们。
+
+## 5. Spring Beans and Dependency Injection（SpringBeans和依赖注入）
+
+
+
