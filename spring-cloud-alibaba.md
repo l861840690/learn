@@ -24,6 +24,20 @@ Nacos是一个易于使用的动态服务发现、配置和服务管理平台，
 
 服务发现是微服务体系结构中的关键组件之一。在这样的体系结构中，手动为每个客户机配置服务列表可能是一项令人望而生畏的任务，并且使动态扩展变得极其困难。Nacos发现帮助您自动向Nacos服务器注册服务，Nacos服务器跟踪服务并动态刷新服务列表。
 
+### 3.2 How to Introduce Nacos Discovery for service registration/discovery（如何引入Nacos Discovery进行服务注册/发现）
+
+请使用组ID为com.alibaba.cloud的启动程序，并将工件ID为spring-cloud-starter-alibaba-nacos-discovery。
+
+### 3.3 An example of using Nacos Discovery for service registration/discovery and call（使用Nacos Discovery进行服务注册/发现和呼叫的示例）
+
+Nacos Discovery与Netflix Ribbon，RestTemplate或OpenFeign集成在一起，可用于服务到服务的呼叫。
+
+#### 3.3.1 Nacos Server Startup（Nacos服务器启动）
+
+有关如何下载和启动Nacos的详细信息，请访问Nacos网站。
+
+Nacos Server启动后，请访问http：// ip：8848以查看控制台（默认帐户名/密码为nacos / nacos）
+
 
 
 
