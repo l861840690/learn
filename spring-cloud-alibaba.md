@@ -38,6 +38,28 @@ Nacos Discovery与Netflix Ribbon，RestTemplate或OpenFeign集成在一起，可
 
 Nacos Server启动后，请访问http：// ip：8848以查看控制台（默认帐户名/密码为nacos / nacos）
 
+#### 3.3.2 Start a Provider Application（启动提供者应用程序）
+
+本小节给出了演示如何将服务注册到Nacos的例子。
+
+#### 3.3.3 Start a Consumer Application（启动消费者应用程序）
+
+在本例中，将使用最原始的方式，也就是将LoadBalanceClient和restemlate显式地结合起来访问RESTful服务。
+
+### 3.4 Nacos Discovery Endpoint（Nacos Discovery端点）
+
+Nacos Discovery在内部提供一个端点，其对应的端点id为Nacos Discovery。
+
+端点公开的json包含两个属性：
+
+subscribe（订阅）：显示当前服务订阅服务器
+
+NacosDiscoveryProperties：显示当前服务的当前基本Nacos配置
+
+本小节还给出了服务实例如何访问终结点的例子。
+
+
+
 
 
 
