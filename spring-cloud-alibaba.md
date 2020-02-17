@@ -58,6 +58,28 @@ NacosDiscoveryProperties：显示当前服务的当前基本Nacos配置
 
 本小节还给出了服务实例如何访问终结点的例子。
 
+### 3.5 More Information about Nacos Discovery Starter Configurations（有关Nacos Discovery Starter配置的更多信息）
+
+本节包含了Nacos Discovery启动器的其他配置
+
+## 4. Spring Cloud Alibaba Nacos Config（Spring Cloud阿里Nacos配置）
+
+Nacos是一个易于使用的动态服务发现、配置和服务管理平台，用于构建云本地应用程序。
+
+### 4.1 How to Introduce Nacos Config for configuration（如何引入Nacos配置）
+
+请使用组ID为com.alibaba.cloud的启动程序，并将工件ID为spring-cloud-starter-alibaba-nacos-config使用。
+
+### 4.2 Quickstart（快速入门）
+
+Nacos Config使用DataId和GROUP来确定配置。
+
+本节例子中显示DataId使用myDataid，GROUP使用DEFAULT\_GROUP，并配置格式为Properties的配置项。
+
+
+
+
+
 
 
 
