@@ -76,11 +76,15 @@ Nacos Config使用DataId和GROUP来确定配置。
 
 本节例子中显示DataId使用myDataid，GROUP使用DEFAULT\_GROUP，并配置格式为Properties的配置项。
 
+### 4.3 Add Configurations with DataId in YAML Format（添加YAML格式的DataId配置）
 
+Nacos配置也支持yaml格式。您只需要完成以下两个步骤。
 
+1、 在bootstrap.properties文件中，添加以下行以声明DataId的格式为yaml。
 
+2、 在Nacos控制台上添加一个DataId为yaml格式的配置。
 
-
+具体配置本节中都有示例。
 
 
 
