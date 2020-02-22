@@ -162,5 +162,11 @@ SentinelProperty提供数据源属性以配置数据源。本节给出了配置�
 
 如果要与Zuul一起使用Sentinel Starter，则需要添加spring-cloud-alibaba-sentinel-gateway依赖关系，并且需要添加spring-cloud-starter-netflix-zuul依赖关系以让Zuul AutoConfiguration类在网关中 模块生效。
 
+### 5.7 Support Spring Cloud Gateway（支持Spring Cloud Gateway）
+
+如果您想将Sentinel Starter与Spring Cloud Gateway一起使用，则需要添加spring-cloud-alibaba-sentinel-gateway依赖项并添加spring-cloud-starter-gateway依赖项以使模块中的Spring Cloud Gateway AutoConfiguration类生效。
+
+### 5.8 Sentinel Endpoint（哨兵端点）
+
 
 
