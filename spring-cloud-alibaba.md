@@ -168,5 +168,29 @@ SentinelProperty提供数据源属性以配置数据源。本节给出了配置�
 
 ### 5.8 Sentinel Endpoint（哨兵端点）
 
+Sentinel在内部为端点提供了一个相应的哨点ID。端点公开的json包含多个属性，在本节中都有介绍。
+
+### 5.9 Configuration（配置）
+
+本节表格中显示了当ApplicationContext中有相应的bean类型时，将采取一些措施。
+
+## 6. Spring Cloud Alibaba Dubbo
+
+### 6.1 Introduction（简介）
+
+无论开发人员是Dubbo用户还是Spring Cloud用户，Dubbo Spring Cloud都是基于Dubbo Spring Boot 2.7.3 \[1\]和Spring Cloud 2.x开发的。 轻松导航和上载应用程序，成本接近“零”成本。 Dubbo Spring Cloud旨在简化Cloud Native开发成本，提高研发性能以及提高应用程序性能。
+
+### 6.2 Features（特点）
+
+由于Dubbo Spring Cloud构建在本地Spring Cloud之上，因此其服务治理功能被认为是Spring Cloud Plus。它不仅完全覆盖了Spring Cloud的本机特性\[5\]，而且还提供了一个更加稳定和成熟的实现，本节介绍了它的特性。
+
+### 6.3 Reference（参考）
+
+本节中列出了Spring Cloud Alibaba Dubbo参考了哪些技术。
+
+## 7. Spring Cloud Alibaba RocketMQ Binder
+
+
+
 
 
