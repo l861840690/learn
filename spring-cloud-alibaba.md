@@ -190,6 +190,10 @@ Sentinel在内部为端点提供了一个相应的哨点ID。端点公开的json
 
 ## 7. Spring Cloud Alibaba RocketMQ Binder
 
+### 7.1 Introduction of RocketMQ（RocketMQ简介）
+
+RocketMQ是一个开源的分布式消息系统。 它基于高度可用的分布式群集技术，并提供具有低延迟和高稳定性的消息发布和订阅服务。 RocketMQ被广泛用于各种行业，例如异步通信，企业支持，金融结算，电信，电子商务，物流，市场营销，社交媒体，即时消息传递，移动应用程序，移动游戏，vedios，IoT和 车联网。
+
 
 
 
