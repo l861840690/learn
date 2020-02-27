@@ -194,6 +194,28 @@ Sentinel在内部为端点提供了一个相应的哨点ID。端点公开的json
 
 RocketMQ是一个开源的分布式消息系统。 它基于高度可用的分布式群集技术，并提供具有低延迟和高稳定性的消息发布和订阅服务。 RocketMQ被广泛用于各种行业，例如异步通信，企业支持，金融结算，电信，电子商务，物流，市场营销，社交媒体，即时消息传递，移动应用程序，移动游戏，vedios，IoT和 车联网。
 
+### 7.2 RocketMQ Usages（RocketMQ 用法）
+
+本节介绍了如何下载RocketMQ，以及如何去使用它。
+
+### 7.3 Introduction of Spring Cloud Stream（Spring Cloud Stream简介）
+
+Spring Cloud Stream是一个微服务框架，用于基于消息构建架构。 它可以帮助您基于SpringBoot创建可用于生产环境的单服务器Spring应用程序，并使用Spring Integration与Broker连接。
+
+Spring Cloud Stream提供了消息中间件配置的统一抽象，并提出了诸如发布-订阅，使用者组和分区之类的概念。
+
+### 7.4 How to use Spring Cloud Alibaba RocketMQ Binder （如何使用Spring Cloud阿里巴巴RocketMQ Binder）
+
+要使用Spring Cloud Alibaba RocketMQ Binder，只需使用本节提供的Maven坐标将其添加到Spring Cloud Stream应用程序中。
+
+### 7.5 How Spring Cloud Alibaba RocketMQ Binder Works（Spring Cloud Alibaba RocketMQ Binder 如何工作）
+
+本节介绍了Spring Cloud Stream RocketMQ Binder的实现架构。
+
+### 7.6 Support MessageSource（支持消息源）
+
+SCS RocketMQ Binder支持MessageSource，可以通过拉去模式接收消息。
+
 
 
 
