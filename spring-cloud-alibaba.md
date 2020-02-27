@@ -216,6 +216,22 @@ Spring Cloud Stream提供了消息中间件配置的统一抽象，并提出了�
 
 SCS RocketMQ Binder支持MessageSource，可以通过拉去模式接收消息。
 
+### 7.7 Configuration Options（配置选项）
+
+#### 7.7.1 RocketMQ Binder Properties（RocketMQ Binder 属性）
+
+#### 7.7.2 RocketMQ Consumer Properties（ RocketMQ 消费者属性）
+
+#### 7.7.3 RocketMQ Provider Properties（RocketMQ 提供程序属性）
+
+## 8. Spring Cloud Alibaba Cloud ANS（Spring Cloud阿里云ANS）
+
+ANS（应用程序命名服务）是EDAS的组件。 Spring Cloud Alibaba Cloud ANS提供符合Spring Cloud规范的商业版本的服务注册和发现，因此您可以在本地开发应用程序并在云上运行它们。
+
+### 8.1 How to Introduce Spring Cloud Alibaba Cloud ANS（如何引入Spring Cloud Alibaba Cloud ANS）
+
+如果要在项目中使用ANS，请使用组ID为com.alibaba.cloud的启动程序，并将工件ID为spring-cloud-starter-alicloud-ans。
+
 
 
 
