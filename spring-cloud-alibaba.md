@@ -232,6 +232,28 @@ ANS（应用程序命名服务）是EDAS的组件。 Spring Cloud Alibaba Cloud 
 
 如果要在项目中使用ANS，请使用组ID为com.alibaba.cloud的启动程序，并将工件ID为spring-cloud-starter-alicloud-ans。
 
+### 8.2 Use ANS to Register Service（使用ANS注册服务）
+
+在客户端上引入Spring Cloud AliCloud ANS Starter时，服务的元数据（例如IP，端口号和weright）将自动注册到注册中心。 客户端将与服务器保持心跳，以证明其能够正确提供服务。
+
+### 8.3 Start Registration Center（启动注册中心）
+
+ANS使用两种类型的注册中心。一个是免费的轻量级配置中心，另一个是通过EDAS提供的云端注册中心。通常，您可以使用轻量级版本进行应用程序开发和本地测试，并使用EDAS进行canary部署或生产。
+
+#### 8.3.1 Start Lightweight Configuration Center（启动轻量级配置中心）
+
+有关如何下载和安装轻量级配置中心的详细信息，请参考配置轻量级配置中心。
+
+#### 8.3.2 User Registration Center on the Cloud（云端用户注册中心）
+
+在云端使用注册中心可以使您免于繁琐的服务器维护工作，同时还可以提供更好的稳定性。 在云端使用注册中心和轻量级配置中心之间在代码级别上没有区别，但是配置方面存在一些差异。
+
+## 9. Spring Cloud Alibaba Cloud ACM
+
+Spring Cloud AliCloud ACM是Spring Cloud客户端上商业产品应用程序配置管理（ACM）的实现，并且是免费的。
+
+使用Spring Cloud AliCloud ACM可基于Spring Cloud的编程模型快速访问ACM配置管理功能。
+
 
 
 
