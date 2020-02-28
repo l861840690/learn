@@ -254,6 +254,16 @@ Spring Cloud AliCloud ACM是Spring Cloud客户端上商业产品应用程序配�
 
 使用Spring Cloud AliCloud ACM可基于Spring Cloud的编程模型快速访问ACM配置管理功能。
 
+### 9.1 How to Introduce Spring Cloud Alibaba Cloud ACM（如何引入Spring Cloud Alibaba Cloud ACM）
+
+### 9.2 Use ACM to Manage Configurations（使用ACM管理配置）
+
+将Spring Cloud Alibaba Cloud ACM Starter引入客户端后，该应用程序将在启动时自动从配置管理服务器获取配置信息，并将配置注入Spring Environment。
+
+本节提供了一个简单的示例。
+
+
+
 
 
 
