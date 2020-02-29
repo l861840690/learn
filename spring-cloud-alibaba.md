@@ -262,6 +262,18 @@ Spring Cloud AliCloud ACM是Spring Cloud客户端上商业产品应用程序配�
 
 本节提供了一个简单的示例。
 
+#### 9.2.1 Start Configuration Center（启动配置中心）
+
+ACM使用两种类型的配置中心。一个是轻量级配置中心，另一个是在阿里云上使用的ACM。通常，您可以使用轻量级版本进行应用程序开发和本地测试，并使用ACM进行canary部署或生产。
+
+#### 9.2.2 Add Configuration in the Configuration Center（在配置中心添加配置）
+
+#### 9.2.3 Start Application Verification（开始应用验证）
+
+本小节的示例，您可以看到控制台上打印的值是我们在轻量级配置中心中配置的值。
+
+### 9.3 Modify Configuration File Extension
+
 
 
 
