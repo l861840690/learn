@@ -272,7 +272,9 @@ ACM使用两种类型的配置中心。一个是轻量级配置中心，另一�
 
 本小节的示例，您可以看到控制台上打印的值是我们在轻量级配置中心中配置的值。
 
-### 9.3 Modify Configuration File Extension
+### 9.3 Modify Configuration File Extension（修改配置文件扩展名）
+
+spring-cloud-starter-alicloud-acm中dataId的默认文件扩展名是properties。 除了属性外，还支持yaml。 您可以使用spring.cloud.alicloud.acm.file-extension设置文件扩展名。 只需将其设置为yaml或yml格式即可。
 
 
 
