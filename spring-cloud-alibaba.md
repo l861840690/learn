@@ -276,6 +276,16 @@ ACM使用两种类型的配置中心。一个是轻量级配置中心，另一�
 
 spring-cloud-starter-alicloud-acm中dataId的默认文件扩展名是properties。 除了属性外，还支持yaml。 您可以使用spring.cloud.alicloud.acm.file-extension设置文件扩展名。 只需将其设置为yaml或yml格式即可。
 
+### 9.4 Dynamic Configuration Refresh（动态配置刷新）
+
+spring-cloud-starter-alicloud-acm支持动态配置更新。 在配置中心中更新配置时，将发布Spring中的RefreshEvent。 具有@RefreshScope和@ConfigurationProperties批注的所有类将自动刷新。
+
+### 9.5 Configure Profile Granularity（配置配置文件粒度）
+
+通过spring-cloud-starter-alicloud-acm加载配置时，使用DataId {spring.application.name}进行配置。 {file-extension}将首先加载。 如果spring.profiles.active中包含内容，则为spring.profile的内容，以及配置的数据ID格式为{spring.application.name}-{profile}。 {file-extension}也将依次加载，后者具有更高的优先级。
+
+
+
 
 
 
