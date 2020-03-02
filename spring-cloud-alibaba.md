@@ -284,6 +284,26 @@ spring-cloud-starter-alicloud-acm支持动态配置更新。 在配置中心中�
 
 通过spring-cloud-starter-alicloud-acm加载配置时，使用DataId {spring.application.name}进行配置。 {file-extension}将首先加载。 如果spring.profiles.active中包含内容，则为spring.profile的内容，以及配置的数据ID格式为{spring.application.name}-{profile}。 {file-extension}也将依次加载，后者具有更高的优先级。
 
+### 9.6 Support Custom ACM Timeout（支持自定义ACM超时）
+
+ACM client get config from sever的默认超时为3000 ms。如果需要定义超时，请设置配置spring.cloud.aliyun.acm.timeout，单位为毫秒。
+
+### 9.7 Support Custom Group Configurations（支持自定义组配置）
+
+如果未定义{spring.cloud.alicloud.acm.group}配置，则默认使用DEFAULT\_GROUP。 如果需要定义自己的组，本节介绍了可以使用的方法。
+
+#### 9.7.1 Support Shared Configurations（支持共享配置）
+
+ACM提供了在多个应用程序之间共享相同配置的解决方案。 您可以通过在Bootstrap中添加spring.application.group配置来执行此操作。
+
+### 9.8 Actuator Endpoint（执行器端点）
+
+ACM的执行器端点为/ acm，config表示ACM元数据配置信息，runtime.sources对应于从ACM服务器获得的配置信息，上一次刷新时间runtime.refreshHistory对应于动态刷新历史记录。
+
+## 10. Spring Cloud Alibaba Cloud OSS
+
+
+
 
 
 
