@@ -302,6 +302,94 @@ ACM的执行器端点为/ acm，config表示ACM元数据配置信息，runtime.s
 
 ## 10. Spring Cloud Alibaba Cloud OSS
 
+OSS（对象存储服务）是阿里云上的存储产品。 Spring Cloud阿里云OSS提供符合Spring Cloud规范的商业化存储服务。 我们提供易于使用的API，并支持将Resource集成到Spring框架中。
+
+### 10.1 How to Introduce Spring Cloud Alibaba Cloud OSS（如何引入 Spring Cloud Alibaba Cloud OSS）
+
+### 10.2 How to Use OSS API（如何使用OSS API）
+
+#### 10.2.1 Configure OSS（配置OSS）
+
+在开始使用Spring Cloud Alibaba Cloud OSS之前，请在application.properties中添加本节示例给出的配置。
+
+#### 10.2.2 Introduce OSS API（引入OSS API）
+
+Spring Cloud Alibaba Cloud OSS的OSS API基于官方的OSS SDK，并包含用于上载，下载，查看文件的API。
+
+这是一个使用OSS API的简单应用程序。
+
+### 10.3 Integrate with the Resource Specifications of Spring（与Spring的资源规范集成）
+
+Spring Cloud阿里云OSS集成了Spring框架的资源，使您可以轻松使用OSS资源。
+
+本节包含了有关如何使用资源的简单示例。
+
+### 10.4 Use STS Authentication（使用STS身份验证）
+
+除了AccessKeys，Spring Cloud Alibaba Cloud OSS还支持STS身份验证。 STS是具有临时安全令牌的身份验证方法，通常用于第三方临时访问其资源。
+
+对于第三方临时访问资源，本节给出了配置步骤。
+
+### 10.5 More Configurations for the Client（客户端的更多配置）
+
+除了基本配置，Spring Cloud Alibaba Cloud OSS还支持许多其他配置，这些配置也包含在application.properties文件中。
+
+本节给出了一些例子。
+
+## 11. Spring Cloud Alibaba Cloud SchedulerX
+
+SchedulerX（分布式作业调度）是阿里云产品EDAS的组件。 Spring Cloud Alibaba Cloud SchedulerX提供符合Spring Cloud规范的分布式作业调度。 SchedulerX提供具有几秒钟的高精度，高稳定性和高可用性的定时作业调度服务，并支持多种作业类型，例如简单的单服务器作业，简单的多主机作业，脚本作业和网格作业。
+
+### 11.1 How to Introduce Spring Cloud Alibaba Cloud SchedulerX（如何引入Spring Cloud Alibaba Cloud SchedulerX）
+
+### 11.2 Start SchedulerX（启动SchedulerX）
+
+将Spring Cloud Alibaba Cloud SchedulerX Starter引入客户端后，您只需要完成一些简单的配置，就能自动初始化SchedulerX服务。
+
+本节含有一个简单的示例。
+
+### 11.3 Compile a simple job（编译一个简单的工作）
+
+简单作业是最常用的作业类型。 您只需要实现ScxSimpleJobProcessor接口。
+
+本节含有一个简单的单服务器作业示例。
+
+### 11.4 Job Scheduling（作业调度）
+
+转到SchedulerX作业页面，选择“测试”区域，然后单击右上角的“创建作业”以创建作业，本节给出了示例。
+
+### 11.5 Usage in Production Environment（在生产环境中的使用）
+
+前面的示例显示了如何在“测试”区域中使用SchedulerX，该区域主要用于本地测试。
+
+在生产级别，除了如上所述的组ID和名称空间之外，您还需要完成一些其他配置。 请参阅本节中的示例。
+
+## 12. Spring Cloud Alibaba Cloud SMS（Spring Cloud阿里云短信）
+
+SMS（短消息服务）是一种覆盖全球的消息服务，阿里巴巴SMS提供便捷，高效和智能的通信功能，可帮助企业快速联系其客户。
+
+Spring Cloud Alibaba Cloud SMS提供了易于使用的API，可用于快速访问基于Spring Cloud Alibaba SMS的Alibaba Cloud的SMS服务。
+
+### 12.1 How to Introduce Spring Cloud Alibaba Cloud SMS（如何引入Spring Cloud Alibaba Cloud SMS）
+
+### 12.2 How to use SMS API（如何使用SMS API）
+
+#### 12.2.1 Configure SMS（配置SMS）
+
+在开始使用Spring Cloud Alibaba Cloud SMS之前，请在application.properties中添加本节中给出的配置。
+
+#### 12.2.2 Introduce SMS API（引入SMS API）
+
+Spring Cloud Alicloud SMS中的SMS API基于阿里云SMS SDK。 它具有单个SMS发送，多个SMS批量发送，SMS查询，SMS消息（SMS接收消息和上游SMS消息）类操作API。
+
+本节含有如何使用SMS api发送短消息的简单示例。
+
+### 12.3 The Advanced Features of SMS Api（SMS Api的高级功能）
+
+为了降低学习成本，Spring Cloud Alicloud SMS软件包的API接口与官方网站提供的API和示例保持一致。
+
+批量短信发送 请参考本节示例，以通过批量SMS发送快速开发功能。 在Controller中添加以下代码或创建新的Controller。
+
 
 
 
