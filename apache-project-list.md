@@ -106,6 +106,28 @@ Apache Bloodhound提供了一个工具来跟踪项目的进展和缺陷，主要
 
 Apache BookKeeper™是可扩展的，容错的，低延迟的存储服务，针对实时工作负载进行了优化。 它具有持久性，复制性和强大的一致性，这是构建可靠的实时应用程序所必需的。
 
+### Brooklyn
+
+Apache Brooklyn是用于管理云应用程序的软件。
+
+### Buildr
+
+Apache Buildr是用于基于Java的应用程序的构建系统，其中包括对Scala，Groovy的支持以及越来越多的JVM语言和工具。
+
+### BVal
+
+Apache BVal提供了Java Bean验证规范的实现，该规范符合TCK，可在Java SE 8或更高版本上运行，并使用Apache Software License v2.0。
+
+## C.
+
+### Calcite 
+
+Apache Calcite 是一款开源SQL解析工具, 可以将各种SQL语句解析成抽象语法术AST\(Abstract Syntax Tree\)，之后通过操作AST就可以把SQL中所要表达的算法与关系体现在具体代码之中。
+
+### Camel
+
+Camel是一个开源集成框架，可让您快速轻松地集成使用或生成数据的各种系统。
+
 
 
 
