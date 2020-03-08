@@ -172,6 +172,16 @@ Apache ****Commons是一个Apache项目，专注于可重用Java组件的所有�
 
 Community Development（社区开发项目）创建并提供工具，流程和建议，以帮助开源软件项目改善其自身的社区健康状况。
 
+### Cordova
+
+ApacheCordova是一个开源的移动开发框架。它允许您使用标准Web技术-HTML 5、CSS 3和JavaScript进行跨平台开发。
+
+### CouchDB
+
+Apache CouchDB™使您可以在需要的地方访问数据。 Couch复制协议已在各种项目和产品中实现，这些项目和产品涵盖了从移动电话到Web浏览器的全球分布的服务器集群，涵盖了所有可以想象的计算环境。
+
+
+
 
 
 
