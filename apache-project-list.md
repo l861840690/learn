@@ -128,6 +128,52 @@ Apache Calcite 是一款开源SQL解析工具, 可以将各种SQL语句解析成
 
 Camel是一个开源集成框架，可让您快速轻松地集成使用或生成数据的各种系统。
 
+### **CarbonData**
+
+Apache CarbonData是一种索引的列式数据格式，用于在大数据平台上进行快速分析，例如 Apache Hadoop，Apache Spark等**。**
+
+### Cassandra
+
+当您需要可伸缩性和高可用性而不影响性能时，Apache Cassandra数据库是正确的选择。 线性可扩展性和在商品硬件或云基础架构上经过验证的容错能力使其成为关键任务数据的理想平台。
+
+### Cayenne
+
+Cayenne与CayenneModeler一起分发，CayenneModeler是一个完整的GUI映射工具，它支持RDBMS架构的反向工程，编辑对象关系映射项目，为持久对象生成Java源代码以及其他功能。
+
+### **Celix**
+
+Apache Celix是适用于C和C ++的OSGi规范的实现。 它是使用面向组件和/或面向服务的程序开发（动态）模块化软件应用程序的框架。
+
+### Chemistry
+
+Apache Chemistry提供了内容管理互操作性服务（CMIS）规范的开源实现。
+
+### Chukwa
+
+Apache Chukwa是一个用于监视大型分布式系统的开源数据收集系统。 Apache Chukwa建立在Hadoop分布式文件系统（HDFS）和Map / Reduce框架之上，并继承了Hadoop的可扩展性和健壮性。 Apache Chukwa还包括一个灵活，功能强大的工具包，用于显示，监视和分析结果，以充分利用收集到的数据。
+
+### Clerezza
+
+Apache Clerezza是一组Java库，用于管理语义链接的数据。
+
+### CloudStack
+
+Apache CloudStack是开源软件，旨在作为高可用性，高度可扩展的基础架构即服务（IaaS）云计算平台来部署和管理大型虚拟机网络。
+
+### Cocoon
+
+Apache Cocoon是一个基于Spring的框架（自Cocoon的2.2版开始），围绕关注点分离和基于组件的开发的概念构建。Cocoon围绕组件管道的概念来实现这些概念，管道上的每个组件都专门用于特定的操作。 这样就可以在构建Web解决方案时使用类似于Lego（tm）的方法，将组件挂钩到管道中，而通常无需任何编程。
+
+### Commons
+
+Apache ****Commons是一个Apache项目，专注于可重用Java组件的所有方面。Commons本体致力于一个主要目标：创建和维护可重用的Java组件。
+
+### Community Development
+
+Community Development（社区开发项目）创建并提供工具，流程和建议，以帮助开源软件项目改善其自身的社区健康状况。
+
+
+
 
 
 
