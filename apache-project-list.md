@@ -180,6 +180,22 @@ ApacheCordova是一个开源的移动开发框架。它允许您使用标准Web�
 
 Apache CouchDB™使您可以在需要的地方访问数据。 Couch复制协议已在各种项目和产品中实现，这些项目和产品涵盖了从移动电话到Web浏览器的全球分布的服务器集群，涵盖了所有可以想象的计算环境。
 
+###  Creadur
+
+这个项目只是从Rat开始的，它是一个具有许可证的发行审核工具，使用Java编写，带有用于Ant和Maven的插件。
+
+### Crunch
+
+Apache Crunch Java库提供了用于编写，测试和运行MapReduce管道的框架。 其目标是使由许多用户定义的函数组成的管道易于编写，易于测试并且运行高效。
+
+### cTAKES
+
+Apache cTAKES™是一种自然语言处理系统，用于从电子病历临床自由文本中提取信息。
+
+### Curator
+
+Apache Curator是用于Apache ZooKeeper（一种分布式协调服务）的Java / JVM客户端库。 它包括一个高级API框架和实用程序，使使用Apache ZooKeeper更加容易和可靠。 它还包括针对常见用例和扩展的配方，例如服务发现和Java 8异步DSL。
+
 
 
 
