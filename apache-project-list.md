@@ -196,6 +196,12 @@ Apache cTAKES™是一种自然语言处理系统，用于从电子病历临床�
 
 Apache Curator是用于Apache ZooKeeper（一种分布式协调服务）的Java / JVM客户端库。 它包括一个高级API框架和实用程序，使使用Apache ZooKeeper更加容易和可靠。 它还包括针对常见用例和扩展的配方，例如服务发现和Java 8异步DSL。
 
+### CXF
+
+Apache CXF™是一个开放源代码服务框架。 CXF帮助您使用前端编程API（例如JAX-WS和JAX-RS）来构建和开发服务。 这些服务可以使用多种协议（例如SOAP，XML / HTTP，RESTful HTTP或CORBA），并且可以通过多种传输（例如HTTP，JMS或JBI）工作。
+
+
+
 
 
 
