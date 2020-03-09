@@ -200,7 +200,32 @@ Apache Curator是用于Apache ZooKeeper（一种分布式协调服务）的Java 
 
 Apache CXF™是一个开放源代码服务框架。 CXF帮助您使用前端编程API（例如JAX-WS和JAX-RS）来构建和开发服务。 这些服务可以使用多种协议（例如SOAP，XML / HTTP，RESTful HTTP或CORBA），并且可以通过多种传输（例如HTTP，JMS或JBI）工作。
 
+## D.
 
+### DataFu
+
+Apache DataFu™是用于在Hadoop中处理大规模数据的库的集合。 该项目的灵感来自对稳定的，经过良好测试的数据库进行数据挖掘和统计的需求。
+
+### DB
+
+DB是Apache Software Foundation的一个项目，负责基于基金会许可的软件创建和维护商业质量的开源数据库解决方案，并免费向公众分发。
+
+### **DeltaSpike**
+
+ApacheDeltaSpike是一组可移植的CDI扩展。这些现成的模块使您能够将经过测试的API扩展集成到Java项目中**。**
+
+### Directory
+
+ApacheDS™是完全用Java编写的可扩展和可嵌入的目录服务器，该服务器已通过Open Group的LDAPv3认证。 除LDAP外，它还支持Kerberos 5和更改密码协议。 它旨在将触发器，存储过程，队列和视图引入缺少这些丰富结构的LDAP世界。
+
+### DRAT
+
+围绕APACHE RATTM（发布审核工具）的分布式并行化（Map Reduce）包装器，它通过利用Apache OODTTM大大加快了处理速度，远远超出了RATTM。
+
+[  
+****](http://directory.apache.org/apacheds/downloads.html)
+
+\*\*\*\*
 
 
 
