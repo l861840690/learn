@@ -326,6 +326,86 @@ Apache HAWQ是Apache Hadoop本机SQL。 适用于企业的高级Analytics MPP数
 
 Apache HBase™是Hadoop数据库，这是一个分布式，可伸缩的大数据存储。
 
+### Helix <a id="Apache_Helix"></a>
+
+Apache Helix是一个通用的群集管理框架，用于自动管理节点群集上托管的分区，复制和分布式资源。 面对节点故障和恢复，集群扩展和重新配置，Helix可以自动重新分配资源。
+
+### Hive
+
+Apache Hive™数据仓库软件有助于使用SQL读取，写入和管理驻留在分布式存储中的大型数据集。 可以将结构投影到已经存储的数据上。 提供了命令行工具和JDBC驱动程序以将用户连接到Hive。
+
+### HttpComponents
+
+Apache HttpComponents™项目负责创建和维护专注于HTTP和相关协议的低级Java组件的工具集。
+
+## I.
+
+### Ignite
+
+ApacheIgnite®是一个内存计算平台，用于事务，分析和流工作负载，可提供PB级的内存速度。
+
+### Impala
+
+Apache Impala是开源的本机分析数据库 适用于Apache Hadoop。
+
+### Incubator
+
+Apache Incubator为希望进入ApacheSoftwareFoundation\(ASF\)的项目提供服务。
+
+它帮助那些传入的项目\(称为“podling”\)采用apache。治理和运作方式并引导他们为我们的项目提供ASF服务，这样他们就可以成为顶级ASF项目\(“TLPs”\)。
+
+Incubator代表几个顾问，作为“实地”代理人，作为与ASF各小组的联络人：孵化器PMC, 基础设施小组等，并促进散装的生长和操作。
+
+### Isis
+
+Apache Isis™是一个框架，用于以Java快速开发域驱动的应用程序。 在实体，域服务或视图模型中编写您的业务逻辑，然后该框架以Web应用程序或富超媒体REST API的形式动态生成该域模型的表示形式。
+
+## J.
+
+### Jackrabbit
+
+Jackrabbit Oak是JCR规范的补充实现。 努力实现可伸缩且高性能的分层内容存储库，以用作现代世界级网站和其他要求苛刻的内容应用程序的基础。
+
+### James
+
+James代表Java Apache Mail Enterprise Server！ 它具有基于丰富的现代高效组件的模块化体系结构，该组件最终提供了在JVM上运行的完整，稳定，安全和可扩展的邮件服务器。
+
+### jclouds
+
+Apache jclouds®是Java平台的开源多云工具包，它使您可以自由创建跨云可移植的应用程序，同时可以完全控制使用特定于云的功能。
+
+### Jena
+
+一个免费的开源Java框架，用于构建语义Web和链接数据应用程序。
+
+### JMeter
+
+Apache JMeter™应用程序是开源软件，这是一个100％纯Java应用程序，旨在加载测试功能行为和衡量性能。 它最初是为测试Web应用程序而设计的，但此后已扩展到其他测试功能。
+
+### Johnzon
+
+Apache Johnzon是一个项目，提供JsonProcessing（aka JSR-353）的实现以及该规范的一组有用扩展，例如对象映射器，某些JAX-RS提供程序和WebSocket模块，它们提供了与Java WebSocket API（JSR- 356）。
+
+### Joshua
+
+Apache Joshua（Incubating），这是一个统计的机器翻译解码器，用于基于短语，基于层次和基于语法的机器翻译，用Java编写。 
+
+### JSPWiki
+
+Apache JSPWiki是领先的开源WikiWiki引擎，功能丰富，并且围绕标准JEE组件（Java，Servlet，JSP）构建。
+
+### jUDDI
+
+jUDDI（读作“ Judy”）是OASIS的开源Java实现，是针对（Web）服务的通用描述，发现和集成（UDDI）规范。 jUDDI项目包括Scout。 Scout是JSR 93-XML Registries 1.0（JAXR）的JavaTM API的实现。
+
+### JUNEAU
+
+Apache Juneau™是一个单一的内聚Java生态系统。
+
+
+
+
+
 
 
 
