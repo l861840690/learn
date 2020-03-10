@@ -222,6 +222,54 @@ ApacheDS™是完全用Java编写的可扩展和可嵌入的目录服务器，�
 
 围绕APACHE RATTM（发布审核工具）的分布式并行化（Map Reduce）包装器，它通过利用Apache OODTTM大大加快了处理速度，远远超出了RATTM。
 
+### Drill
+
+Drill是用于大数据探索的Apache开源SQL查询引擎。 Drill从头开始设计，以支持对来自现代大数据应用程序的半结构化且快速发展的数据进行高性能分析，同时仍提供行业标准查询语言ANSI SQL的熟悉性和生态系统。
+
+### Druid
+
+Apache Druid是高性能的实时分析数据库。Druid是为那些快速查询和摄入非常重要的工作流而设计的。Druid擅长即时数据可见性、临时查询、操作分析和处理高并发性。
+
+### Dubbo
+
+Apache Dubbo™是基于Java的高性能开源RPC框架。Dubbo提供了三个关键功能，包括基于接口的远程呼叫，容错和负载平衡以及自动服务注册和发现。
+
+## E.
+
+### Eagle
+
+Apache Eagle（以下称为Eagle）是一种开源分析解决方案，用于即时识别大数据平台（例如， Apache Hadoop，Apache Spark等。它分析数据活动，yarn应用程序，jmx度量标准和守护程序日志等，并提供最新的警报引擎来识别安全漏洞，性能问题并显示见解。
+
+### Empire-db
+
+Apache Empire-db是一个关系数据库抽象层和数据持久性组件，与传统的对象关系映射框架（ORM）相比，它使开发人员可以在应用程序开发中采用更多以SQL为中心的方法。
+
+## F.
+
+### Felix
+
+Apache Felix是社区的一项工作，目的是在Apache许可下实现OSGi框架和服务平台以及其他与OSGi相关的有趣技术。 OSGi规范最初是针对嵌入式设备和家庭服务网关的，但它们非常适合对模块化，面向组件和/或面向服务的原理感兴趣的任何项目。 OSGi技术结合了上述原则的各个方面，以定义适用于远程管理的动态服务部署框架。
+
+### Fineract
+
+Apache Fineract是用于金融服务的开源软件。Fineract致力于创新的基于移动和云的解决方案，并为所有人提供数字交易帐户。
+
+### Flex
+
+Flex是一个功能强大的开源应用程序框架，它允许您使用相同的编程模型、工具和代码库，轻松地为IOS、Android™和Blackberry Tablet OS设备以及浏览器和桌面的传统应用程序构建移动应用程序。
+
+###  **Flink**
+
+Apache Flink是一个框架和分布式处理引擎，用于对无边界和有边界的数据流进行有状态的计算。 Flink旨在运行在所有常见的集群环境中，以内存速度和任何规模执行计算。
+
+### Flume
+
+Flume是一种分布式，可靠且可用的服务，用于有效地收集，聚合和移动大量日志数据。
+
+
+
+
+
 [  
 ****](http://directory.apache.org/apacheds/downloads.html)
 
