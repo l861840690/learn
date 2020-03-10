@@ -266,6 +266,68 @@ Apache Flink是一个框架和分布式处理引擎，用于对无边界和有�
 
 Flume是一种分布式，可靠且可用的服务，用于有效地收集，聚合和移动大量日志数据。
 
+### Fluo
+
+Apache Fluo™是一个分布式处理系统，使用户可以对大型数据集进行增量更新。
+
+### FreeMarker
+
+Apache FreeMarker™是一个模板引擎：一个Java库，用于根据模板和不断变化的数据生成文本输出（HTML网页，电子邮件，配置文件，源代码等）。
+
+G.
+
+### Geode
+
+Apache Geode提供了类似数据库的一致性模型，可靠的事务处理和无共享体系结构，以通过高并发处理保持非常低的延迟性能。
+
+### Geronimo
+
+Apache Geronimo是一个开放源代码服务器运行时，它集成了最佳的开放源代码项目，以创建满足企业开发人员和系统管理员需求的Java / OSGi服务器运行时。
+
+### Giraph
+
+Apache Giraph是为实现高可伸缩性而构建的迭代图处理系统。 例如，它目前在Facebook上用于分析由用户及其联系形成的社交图。
+
+### Gora
+
+Apache Gora™开源框架提供了内存中的数据模型和大数据的持久性。 Gora支持持久存储到列存储，键值存储，文档存储，分布式内存中键/值存储，内存中数据网格，内存中高速缓存，分布式多模型存储以及混合内存中体系结构。
+
+### Griffin
+
+Apache Griffin是大数据的开源数据质量解决方案，它支持批处理和流模式。 它提供了一个统一的流程，可以从不同的角度衡量您的数据质量，从而帮助您构建可信任的数据资产，从而增强您对业务的信心。
+
+### Groovy
+
+Apache Groovy是一种功能强大的，可选的类型化和动态语言，具有Java平台的静态类型和静态编译功能，旨在通过简洁，熟悉和易于学习的语法提高开发人员的生产率。
+
+### Guacamole
+
+Apache Guacamole是无客户端远程桌面网关。 它支持标准协议，例如VNC，RDP和SSH。
+
+### Gump
+
+Apache Gump持续集成工具是Apache Software Foundation开发的第一个工具。它是用Python编写的，并且完全支持Apache Ant，Apache Maven（1.x至3.x）和其他构建工具。
+
+### H.
+
+### Hadoop
+
+Apache Hadoop软件库是一个框架，该框架允许使用简单的编程模型跨计算机集群对大型数据集进行分布式处理。 它旨在从单个服务器扩展到数千台机器，每台机器都提供本地计算和存储。
+
+### Hama
+
+Apache HamaTM是使用Bulk Synchronous Parallel（BSP）计算模型的大数据分析框架，该模型于2012年作为Apache Software Foundation的顶级项目而建立。它不仅提供了纯BSP编程模型，还提供了以顶点和神经元为中心的编程模型。
+
+### HAWQ
+
+Apache HAWQ是Apache Hadoop本机SQL。 适用于企业的高级Analytics MPP数据库。
+
+### HBase
+
+Apache HBase™是Hadoop数据库，这是一个分布式，可伸缩的大数据存储。
+
+
+
 
 
 
