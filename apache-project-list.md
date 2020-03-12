@@ -12,7 +12,7 @@ description: 阿帕奇的项目的简介大纲，按名称排列
 
 Apache Accumulo®是一种排序的分布式键/值存储，可提供健壮，可扩展的数据存储和检索。
 
-使用ApacheAccumulo，用户可以跨集群存储和管理大型数据集。
+使用Apache Accumulo，用户可以跨集群存储和管理大型数据集。
 
 ### **ActiveMQ**
 
