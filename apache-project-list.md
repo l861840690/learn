@@ -542,6 +542,34 @@ Oozie是一个工作流调度程序系统，用于管理Apache Hadoop作业。
 
 Apache ****Open Climate Workbench工具包旨在提供一套工具，使气候科学家的生活更容易。为此，它提供了加载和操作数据集、运行评估和绘制结果的工具。
 
+### OpenJPA
+
+Apache OpenJPA是Apache软件基金会的Java持久性项目，可以用作独立的POJO持久性层，也可以集成到任何符合Java EE的容器和许多其他轻量级框架中，例如Tomcat和Spring。
+
+### Openmeetings
+
+Openmeetings提供视频会议，即时消息传递，白板，协作文档编辑和其他组件软件工具。 它使用Media Server的API函数进行远程处理和流传输（Red5或Kurento）。
+
+### OpenNLP
+
+Apache OpenNLP库是基于机器学习的工具箱，用于处理自然语言文本。
+
+### OpenOffice
+
+Apache OpenOffice™是来自Apache Software Foundation的免费开放式生产力套件。
+
+### OpenWebBeans
+
+Apache OpenWebBeans提供了Java EE（CDI）2.0规范（JSR-365）的上下文和依赖项注入的实现。
+
+### **OpenWhisk**
+
+Apache OpenWhisk是一个开放源代码的分布式无服务器平台，该平台可以执行功能（fx）以响应各种规模的事件。 OpenWhisk使用Docker容器管理基础架构，服务器和扩展，因此您可以专注于构建出色而高效的应用程序。
+
+### ORC
+
+ORC是一种专为Hadoop工作负载设计的自我描述类型感知列式文件格式。 它针对大型流读取进行了优化，但具有集成支持，可快速查找所需的行。
+
 
 
 
