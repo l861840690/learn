@@ -570,6 +570,58 @@ Apache OpenWhisk是一个开放源代码的分布式无服务器平台，该平�
 
 ORC是一种专为Hadoop工作负载设计的自我描述类型感知列式文件格式。 它针对大型流读取进行了优化，但具有集成支持，可快速查找所需的行。
 
+## P.
+
+### Parquet
+
+Apache Parquet是Hadoop生态系统中任何项目均可使用的列式存储格式，而与数据处理框架，数据模型或编程语言的选择无关。
+
+### PDFBox
+
+ApachePDFBox®库是用于处理PDF文档的开源Java工具。 该项目允许创建新的PDF文档，操作现有文档以及从文档中提取内容的功能。
+
+### Perl
+
+mod\_perl融合了Perl编程语言和Apache HTTP服务器的全部功能。 您可以使用Perl来管理Apache，响应对网页的请求等等。
+
+### Phoenix
+
+Apache Phoenix通过结合两个方面的优势，为低延迟应用程序启用Hadoop中的OLTP和操作分析。
+
+### Pig
+
+Apache Pig是一个用于分析大型数据集的平台，该平台包含用于表达数据分析程序的高级语言，以及用于评估这些程序的基础结构。
+
+### Pivot
+
+Apache Pivot™是用于构建可安装Internet应用程序（IIA）的开源平台。 它结合了现代用户界面工具包的增强的生产力和可用性功能以及Java平台的强大功能。
+
+### PLC4X
+
+PLC4X是一组库，用于使用各种协议但使用共享的API与工业可编程逻辑控制器（PLC）通信。
+
+### POI 
+
+Apache POI API的主要用途是文本提取应用程序，如Web蜘蛛、索引生成器和内容管理系统。
+
+### Portable Runtime\(APR\)
+
+Apache Portable Runtime\(APR\)项目的任务是创建和维护软件库，为特定于平台的底层实现提供可预测和一致的接口。
+
+### Portals
+
+Apache Portals是一个协作软件开发项目，致力于在各种平台和编程语言上提供健壮的，功能齐全的，商业质量的和免费提供的Portal相关软件。
+
+### PredictionIO
+
+Apache PredictionIO®是一个开源的机器学习服务器，它建立在最新的开源堆栈之上，供开发人员和数据科学家使用，以为任何机器学习任务创建预测引擎。
+
+### Pulsar
+
+Apache Pulsar是最初由Yahoo创建的开源分布式pub-sub消息传递系统，现已成为Apache Software Foundation的一部分。
+
+
+
 
 
 
