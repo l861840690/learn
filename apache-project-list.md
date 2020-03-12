@@ -506,7 +506,41 @@ Apache MyFaces是Apache Software Foundation的一个项目，并托管几个与J
 
 Apache Mynewt是一种操作系统，它使开发微控制器环境的应用程序变得容易，因为在微控制器环境中，电源和成本是驱动因素。这些设备的例子包括连接的锁、灯和可穿戴设备。
 
+## N.
 
+### NetBeans
+
+Apache NetBeans是用于Java SE，Java EE，PHP和JavaScript开发的完整IDE，并具有一些Groovy语言支持。
+
+### NiFi
+
+NiFi旨在自动执行系统之间的数据流。 虽然“数据流”一词在多种情况下使用，但我们在这里使用它来表示系统之间的自动化和托管信息流。
+
+### Nutch
+
+Nutch是成熟的，可立即投入生产的Web搜寻器。 Nutch 1.x依靠Apache Hadoop™数据结构实现精细的配置，这对于批处理非常有用。
+
+## O.
+
+### **OFBiz**
+
+Apache OFBiz是一套足够灵活的业务应用程序套件，可以在任何行业中使用。 通用的体系结构允许开发人员轻松扩展或增强它以创建自定义功能。
+
+### Olingo
+
+Apache Olingo是实现开放数据协议（OData）的Java库。 Apache Olingo服务OData的客户端和服务器方面。
+
+### OODT
+
+Apache面向对象的数据技术（OODT）是集成和归档流程，数据及其元数据的智能方法。
+
+### Oozie
+
+Oozie是一个工作流调度程序系统，用于管理Apache Hadoop作业。
+
+### Open Climate Workbench
+
+Apache ****Open Climate Workbench工具包旨在提供一套工具，使气候科学家的生活更容易。为此，它提供了加载和操作数据集、运行评估和绘制结果的工具。
 
 
 
