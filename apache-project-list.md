@@ -402,6 +402,114 @@ jUDDI（读作“ Judy”）是OASIS的开源Java实现，是针对（Web）服�
 
 Apache Juneau™是一个单一的内聚Java生态系统。
 
+## K.
+
+### Kafka
+
+Apache Kafka®是一个分布式流媒体平台。
+
+### Karaf
+
+Karaf是轻量级，功能强大且可用于企业的应用程序运行时。 它提供了应用程序所需的所有生态系统和引导选项。 它在内部或云上运行。 通过多态，这意味着Karaf可以托管任何类型的应用程序：WAR，OSGi，Spring等。
+
+### Kibble
+
+Apache Kibble是一套用于收集，汇总和可视化软件项目中活动的工具。
+
+### Knox
+
+Apache Knox™网关是一个应用程序网关，用于与Apache Hadoop部署的REST API和UI进行交互。
+
+### Kudu
+
+Apache Kudu是开源Apache Hadoop生态系统的新成员，它完善了Hadoop的存储层，可对快速数据进行快速分析。
+
+### Kylin
+
+Apache Kylin™是用于大数据的开源分布式分析数据仓库； 它旨在提供大数据时代的OLAP（在线分析处理）功能。 
+
+## L.
+
+### Labs
+
+Apache Labs是创新的地方，基金会的提交者可以尝试新的想法。 目的是在没有社区建设负担的情况下，提供必要的资源来促进和维护Apache社区内的创新能力。
+
+### Lens
+
+Lens提供了Unified Analytics（分析）界面。 Lens旨在通过提供跨多层数据存储的数据的单一视图以及用于分析查询的最佳执行环境来削减数据分析的孤岛。 它无缝地将Hadoop与传统数据仓库集成在一起，看起来就像一个仓库。
+
+### Libcloud
+
+Apache Libcloud是一个Python库，它隐藏了不同的云提供商API之间的差异，并允许您通过统一且易于使用的API管理不同的云资源。
+
+### logging services
+
+Apache日志记录服务项目创建并维护与应用程序行为的日志记录相关的开源软件，并且免费向公众发布。
+
+### Lucene
+
+Apache LuceneTM项目开发了开源搜索软件。 该项目发布了一个名为LuceneTM core的核心搜索库以及SolrTM搜索服务器。
+
+### Lucene
+
+Lucene.Net是Lucene搜索引擎库的端口，用C＃编写，面向.NET运行时用户。
+
+## M.
+
+### MADlib
+
+Apache MADlib是一个开源项目，致力于在各个方面坚持The Apache Way的原则。
+
+### Mahout
+
+Apache Mahout是一个分布式线性代数框架和数学表达式ScalaDSL旨在让数学家、统计学家和数据科学家快速实现自己的算法。
+
+### ManifoldCF
+
+由程序实现，它可以搜集保存在互联网或企业网上各种服务器里的文档或程序实现，它可以搜集保存在互联网或企业网上各种服务器里的文档或网页，并将其发送到搜索引擎。
+
+## Marmotta
+
+Apache Marmotta是链接数据的开放平台。
+
+Apache Marmotta的目标是提供链接数据平台的开放式实现，想要发布链接数据或在链接数据上构建自定义应用程序的组织可以轻松使用，扩展和部署它们。
+
+### Maven
+
+Apache Maven是一个软件项目管理和理解工具。 基于项目对象模型（POM）的概念，Maven可以从中央信息管理项目的构建，报告和文档。
+
+### Mesos
+
+Apache Mesos从计算机（物理或虚拟）中提取CPU，内存，存储和其他计算资源，从而使容错和弹性的分布式系统易于构建和有效运行。
+
+### MetaModel
+
+提供用于发现，元数据探索和不同类型数据源查询的通用接口。
+
+### Metron
+
+Apache Metron提供了可扩展的高级安全分析框架，该框架使用从Cisco OpenSOC项目演变而来的Hadoop社区构建。
+
+### MINA
+
+Apache MINA是一个网络应用程序框架，可帮助用户轻松开发高性能和高可伸缩性的网络应用程序。
+
+### Mnemonic
+
+ApacheMnemonic是一种面向混合存储的高级库，它提出了一种非易失/持久的Java对象模型和持久的计算服务，为提高海量实时数据处理/分析的性能带来了诸多优势。开发人员可以使用这个库来设计低缓存和少服务的高性能应用程序。
+
+### MyFaces
+
+Apache MyFaces是Apache Software Foundation的一个项目，并托管几个与JavaServer™技术有关的子项目。
+
+### Mynewt
+
+Apache Mynewt是一种操作系统，它使开发微控制器环境的应用程序变得容易，因为在微控制器环境中，电源和成本是驱动因素。这些设备的例子包括连接的锁、灯和可穿戴设备。
+
+
+
+
+
 
 
 
