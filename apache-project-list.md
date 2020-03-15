@@ -678,6 +678,124 @@ serf库是基于Apache可移植运行时（APR）库构建的基于C的高性能
 
 ### ServiceComb
 
+Apache ServiceComb是微服务的开源解决方案。它由多个组件组成，可以通过组合组件灵活地适应不同的场景。
+
+### ServiceMix
+
+Apache ServiceMix是一个灵活的开源集成容器，它将Apache ActiveMQ，Camel，CXF和Karaf的特性和功能统一到一个功能强大的运行时平台中，您可以使用该平台来构建自己的集成解决方案。
+
+###  **Shiro**
+
+Apache Shiro™是一个功能强大且易于使用的Java安全框架，用于执行身份验证，授权，加密和会话管理。
+
+### SINGA
+
+SINGA 是基于大型数据集训练大型深度学习模块的常规分布式学习平台。
+
+### SIS
+
+Apache Spatial Information System（SIS）是用于开发地理空间应用程序的免费软件Java语言库。 SIS提供了用于地理特征的数据结构和关联的元数据，以及用于操纵这些数据结构的方法。
+
+### SkyWalking
+
+SkyWalking是可观察性分析平台和应用程序性能管理系统。它提供了分布式跟踪，服务网格遥测分析，度量聚合和可视化多合一解决方案。
+
+### Sling
+
+Apache Sling™是基于可扩展内容树的RESTful Web应用程序的框架。
+
+### SpamAssassin
+
+Apache SpamAssassin是排名第一的开源反垃圾邮件平台，为系统管理员提供了一个过滤器，用于对电子邮件进行分类并阻止垃圾邮件（未经请求的批量电子邮件）。
+
+###  **Spark**
+
+Apache Spark™是用于大规模数据处理的统一分析引擎。
+
+### Sqoop
+
+Apache Sqoop（TM）是一种工具，旨在在Apache Hadoop和结构化数据存储（例如关系数据库）之间高效地传输批量数据。
+
+### Stanbol
+
+Apache Stanbol为语义内容管理提供了一组可重用的组件。
+
+### STeVe
+
+Apache STeVe是Apache基于Python的投票系统，基金会使用该系统处理新董事会中的投票等事务。
+
+### Storm
+
+Apache Storm是一个免费的开源分布式实时计算系统。 Apache Storm使得可靠处理无限数据流变得容易，实时处理就像Hadoop批处理一样。
+
+### Streams
+
+Apache Streams包含基于JRE的模块，开发人员可以使用它们轻松地与在线数据源集成并构建活动，实体和关系的多语言索引-所有这些都基于活动流等公共标准或其他已发布的组织标准。
+
+### Struts
+
+Apache Struts是一个免费的开源MVC框架，用于创建优雅的现代Java Web应用程序。 与配置相比，它更倾向于约定俗成，可以使用插件体系结构进行扩展，并且附带了支持REST，AJAX和JSON的插件。
+
+### Submarine
+
+Apache Submarine是一个统一的AI平台，允许工程师和数据科学家在分布式集群中运行机器学习和深度学习工作负载。
+
+### Subversion
+
+Subversion作为一个开源的、集中的版本控制系统，其特点是作为有价值数据的安全港的可靠性；其模型和使用的简单性；以及支持各种用户和项目的需求的能力，正得到广泛的认可和采用，从个体经营到大型企业经营。
+
+### Synapse
+
+Apache Synapse是一种轻量级的高性能企业服务总线（ESB）。 由快速和异步中介引擎提供支持，Apache Synapse为XML，Web服务和REST提供了出色的支持。
+
+### Syncope
+
+Apache Syncope是一个开放源代码系统，用于管理企业环境中的数字身份，它以Java EE技术实现并在Apache 2.0许可下发布。
+
+### SystemML
+
+Apache SystemML为使用大数据的机器学习提供了理想的工作场所。它可以在Apache Spark之上运行，在Apache Spark上它会自动逐行缩放数据，从而确定代码应在驱动程序还是Apache Spark集群上运行。 未来SystemML的发展将包括具有GPU功能的其他深度学习，例如导入和运行神经网络体系结构以及用于训练的预训练模型。
+
+## **T.**
+
+### Tajo
+
+Apache Tajo是用于Apache Hadoop的强大的大数据关系和分布式数据仓库系统。
+
+### Tapestry
+
+Apache ****Tapestry是一种面向组件的框架，用于在Java中创建高度可伸缩的Web应用程序。
+
+### Tcl
+
+Apache Tcl是Tcl-Apache集成工作的所在地。 我们项目的目的是将Apache Web服务器的功能与成熟，健壮和灵活的Tcl脚本语言的功能结合起来。
+
+### TEZ
+
+ApacheTEZ®项目旨在构建一个应用程序框架，该框架允许使用复杂的有向无环图来处理数据。 它当前构建在Apache Hadoop YARN之上。
+
+### Thrift
+
+Apache Thrift软件框架（用于可扩展的跨语言服务开发）将软件堆栈与代码生成引擎结合在一起，以构建可在C ++，Java，Python，PHP，Ruby，Erlang，Perl，Haskell，C＃， 可可，JavaScript，Node.js，Smalltalk，OCaml和Delphi等语言。
+
+### Tika
+
+Apache Tika™工具箱可从一千多种不同的文件类型（例如PPT，XLS和PDF）中检测并提取元数据和文本。 所有这些文件类型都可以通过一个界面进行解析，从而使Tika可用于搜索引擎索引，内容分析，翻译等等。
+
+### TinkerPop
+
+Apache TinkerPop™是用于图形数据库（OLTP）和图形分析系统（OLAP）的图形计算框架。
+
+### Tomcat
+
+Apache Tomcat®软件是Java Servlet，JavaServer Pages，Java Expression Language和Java WebSocket技术的开源实现。为各种行业和组织中的众多大型，关键任务Web应用程序提供支持。
+
+
+
+
+
+\_\_
+
 
 
 
