@@ -620,6 +620,66 @@ Apache PredictionIO®是一个开源的机器学习服务器，它建立在最�
 
 Apache Pulsar是最初由Yahoo创建的开源分布式pub-sub消息传递系统，现已成为Apache Software Foundation的一部分。
 
+## Q.
+
+## Qpid <a id="-nameplate"></a>
+
+Apache Qpid™提供了会说AMQP并支持多种语言和平台的消息传递工具。
+
+AMQP是一种开放的Internet协议，用于可靠地发送和接收消息。 它使每个人都可以构建一个多样化，一致的消息传递生态系统。
+
+## R.
+
+### Ranger
+
+Apache Ranger™是一个框架，用于在整个Hadoop平台上启用，监视和管理全面的数据安全性。
+
+### REEF
+
+Apache REEF™（可保持评估程序执行框架）是一个用于为集群资源管理器（如Apache Hadoop™YARN或Apache Mesos™）开发可移植应用程序的库。
+
+### River
+
+River是Jini服务导向架构的实现。 它定义了一种编程模型，该模型可以利用和扩展Java技术，以构建由服务和客户端的联合组成的安全的分布式系统。
+
+### RocketMQ
+
+Apache RocketMQ™是一个统一的消息传递引擎，轻量级的数据处理平台。
+
+### Roller
+
+Apache Roller是基于Java的功能齐全的多用户和组博客服务器，适用于大小博客网站。
+
+### Royale
+
+Apache Royale™是一种高效的开源前端应用程序技术，可让您使用MXML和AS3进行编码并输出为不同的格式。
+
+### Rya
+
+Apache Rya是大数据三元组存储，可提供可扩展的存储，检索和RDF数据分析。
+
+## S.
+
+### Samza
+
+它是一个分布式流处理框架，允许您构建有状态的应用程序，以从多个来源（包括Apache Kafka）实时处理数据。
+
+### Santuario
+
+Apache Santuario™项目旨在为XML提供主要安全标准的实现。
+
+### Sentry
+
+Apache Sentry™是用于对存储在Hadoop集群上的数据和元数据实施基于细粒度角色的授权的系统。
+
+### serf
+
+serf库是基于Apache可移植运行时（APR）库构建的基于C的高性能HTTP客户端库。 它已根据Apache许可v2获许可。
+
+### ServiceComb
+
+
+
 
 
 
