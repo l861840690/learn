@@ -4,63 +4,33 @@ description: JavaEE8规范大纲简介
 
 # JavaEE8
 
-## EE.8应用程序组装和部署
+## **Java EE Platform（JavaEE平台）**
 
-### EE.8.1应用程序开发生命周期
+### Java Platform, Enterprise Edition 8 \(Java EE 8\)**（**Java平台企业版8（Java EE 8）**）**
 
-#### EE.8.1.1组件创建
+这个规范定义了JavaEE平台的一个版本。
 
-#### EE.8.1.2应用程序组装
+该版本的主要重点是对HTML 5和新出现的HTTP2.0标准的支持；增强简化和托管bean集成；以及改进运行在云中的应用程序的基础设施。
 
-#### EE.8.1.3部署
+##  **Web Application Technologies（**网络应用技术**）**
 
-### EE.8.2库支持
+### Java API for WebSocket 1.1
 
-#### EE.8.2.1捆绑库
+此JSR将定义用于创建WebSocket应用程序的标准API。有各种各样的web应用程序依赖于中央服务器的及时更新，如股票代码、实时地图、聊天应用程序、协作在线工具和基于多人网络的游戏。WebSocket为基于HTTP的解决方案\(如轮询、长轮询和HTTP流\)带来的延迟、可伸缩性和性能问题提供了解决方案。
 
-#### EE.8.2.2已安装的库
+### Java API for JSON Binding 1.0
 
-#### EE.8.2.3图书馆冲突
+JSON作为一种可移植的表示对象和数据的方法已经有了很大的发展。它被越来越多的系统和层所使用，从Web服务到配置数据。
 
-#### EE.8.2.4图书馆资源
+最近建立的JavaAPIforJSON处理\(JSON-P\)规范定义了一个用于解析和生成JSON数据的标准API。下一个逻辑步骤是标准化将JSON转换为Java对象的方法，反之亦然。Json-B将利用JSON-P，并在其之上提供一个转换层。
 
-#### EE.8.2.5动态类加载
+### Java API for JSON Processing 1.1
 
-#### EE.8.2.6示例
+此JSR将为JavaAPIforJSON处理规范\(JSON-P\)提供更新。
 
-### EE.8.3类加载要求
+这个JSR有3个目标**：**1、支持JSON指针和JSON修补程序 2、将编辑/转换操作添加到JSON对象模型中 3、更新API以使用JavaSE 8
 
-#### EE.8.3.1 Web容器类加载要求
-
-#### EE.8.3.2 EJB容器类加载要求
-
-#### EE.8.3.3应用程序客户端容器类加载要求 
-
-#### EE.8.3.4小程序容器类的加载要求
-
-### EE.8.4应用程序汇编
-
-#### EE.8.4.1组装Java EE应用程序
-
-#### EE.8.4.2添加和删除模块
-
-### EE.8.5部署
-
-#### EE.8.5.1部署独立的Java EE模块
-
-#### EE.8.5.2部署Java EE应用程序
-
-#### EE.8.5.3部署库
-
-#### EE.8.5.4模块初始化
-
-### EE.8.6 Java 
-
-### EE应用程序XML架构
-
-### EE.8.7通用Java 
-
-### EE XML架构定义
+### Java Servlet 4.0
 
 
 
