@@ -794,6 +794,98 @@ Apache Tomcat®软件是Java Servlet，JavaServer Pages，Java Expression Langua
 
 Apache TomEE是一个新的JavaEE服务器。它体积小，内存使用少，灵活，支持在现有Apache项目中运行开源组件。
 
+### Traffic Control
+
+Apache Traffic Control允许您使用开源构建大规模的内容交付网络。 基于Apache Traffic Server作为缓存软件构建，Traffic Control实现了现代CDN的所有核心功能。
+
+### Traffic Server
+
+Apache Traffic Server™软件是一种快速，可扩展且可扩展的HTTP / 1.1和HTTP / 2.0兼容缓存代理服务器。 Yahoo!以前是商业产品。 将其捐赠给Apache基金会，目前已被多个主要CDN和内容所有者使用。
+
+### Trafodion
+
+Apache Trafodion是一个Webscale的SQL-on-Hadoop解决方案，支持Apache Hadoop上的事务或操作工作负载。
+
+### Turbine
+
+Apache Turbine™是一个基于servlet的框架，可让经验丰富的Java开发人员快速构建Web应用程序。 Turbine允许您使用个性化的网站并使用用户登录名来限制对应用程序某些部分的访问。
+
+### Twill
+
+Apache Twill是对ApacheHadoop®YARN的抽象，它降低了开发分布式应用程序的复杂性，使开发人员可以专注于其应用程序逻辑。 Apache Twill允许您将YARN的分布式功能与类似于运行线程的编程模型一起使用。
+
+### U.
+
+### UIMA
+
+Apache UIMA（非结构化信息管理应用程序）是分析大量非结构化信息以便发现与最终用户相关的知识的软件系统。 UIM应用程序示例可能会提取纯文本并标识实体，例如人员，地点，组织； 或关系，例如工作对象或所在地。
+
+### Unomi
+
+Apache Unomi™（发音为"You know me"）是一个Java开源客户数据平台，这是一个Java服务器，旨在管理客户，潜在客户和访客数据，帮助个性化客户体验，同时还提供尊重访客隐私规则（例如GDPR）的功能 ）。
+
+### Usergrid
+
+构建应用而不是服务器！ 无论您需要支持一个应用程序还是一百个应用程序，Usergrid都是您的后端。 与LAMP堆栈一样简单，但可用于移动设备。 在记录时间内使App投入生产，并避免浪费编写服务器端代码的时间。
+
+## V.
+
+### VCL
+
+VCL代表虚拟计算实验室。 它是一个免费的开源云计算平台，其主要目标是为用户提供专用的自定义计算环境。
+
+### Velocity
+
+Velocity是基于Java的模板引擎。 它允许任何人使用简单而强大的模板语言来引用Java代码中定义的对象。
+
+## W.
+
+### Web Services
+
+Apache WebServices项目是许多与Web服务相关的项目的所在地。
+
+### Whimsy
+
+Whimsy是一组独立的工具和一个公共库，通常需要访问各种ASF SVN目录和/或LDAP。 为了进行开发和测试，您将需要访问一台您愿意在其上安装库的计算机，该库将执行诸如访问LDAP，XML解析，ASF Subversion存储库，撰写邮件等操作以获得全部功能。
+
+### Wicket
+
+Wicket是一个开放源码的，面向组件的，服务器端的Java Web应用程序框架。
+
+## X.
+
+### Xalan
+
+Xalan是XSLT处理器，用于将XML文档转换为HTML，文本或其他XML文档类型。
+
+### Xerces
+
+Xerces是Apache项目的Xerces XML解析器的PerlAPI。它是使用Xerces C++API实现的，它提供了从Perl访问大部分C++API的功能。因为Xerces-C是基于Xerces-C的，所以xml：：Xerces提供了一个验证性的XML解析器，使您的应用程序能够轻松地读取和写入XML数据。类用于解析、生成、操作和验证XML文档。
+
+### XML Graphics
+
+Apache XML Graphics Commons是一个由Apache Batik和Apache FOP使用的几个可重用组件组成的库。 其中许多组件可以轻松地在SVG和XSL-FO的域之外单独使用。 您将找到诸如PDF库，RTF库，Graphics2D实现之类的组件，这些组件可让您生成PDF和PostScript文件以及更多其他内容。
+
+## Y.
+
+### Yetus
+
+Apache Yetus是一组库和工具的集合，这些库和工具支持软件项目的贡献和发布过程。
+
+## Z.
+
+###  Zeppelin
+
+Apache Zeppelin是基于Web的笔记本，可实现数据驱动， 使用SQL，Scala等进行交互式数据分析和协作文档。
+
+### ZooKeeper
+
+ZooKeeper是用于维护配置信息，命名，提供分布式同步以及提供组服务的集中式服务。 所有这些类型的服务都以某种形式被分布式应用程序使用。
+
+
+
+
+
 
 
 
