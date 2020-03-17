@@ -32,6 +32,8 @@ JSON作为一种可移植的表示对象和数据的方法已经有了很大的�
 
 ### Java Servlet 4.0
 
+该JSR的主要目标是向ServletAPI的用户公开对即将推出的IETF标准HTTP/2的支持。第二个目标是刷新ServletAPI，以满足HTTP1.1中的新特性，并响应社区输入。
+
 
 
 
