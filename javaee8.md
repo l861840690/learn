@@ -1,5 +1,5 @@
 ---
-description: JavaEE8
+description: JavaEE8规范大纲简介
 ---
 
 # JavaEE8
