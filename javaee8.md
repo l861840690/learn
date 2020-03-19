@@ -34,6 +34,14 @@ JSON作为一种可移植的表示对象和数据的方法已经有了很大的�
 
 该JSR的主要目标是向ServletAPI的用户公开对即将推出的IETF标准HTTP/2的支持。第二个目标是刷新ServletAPI，以满足HTTP1.1中的新特性，并响应社区输入。
 
+### JavaServer Faces 2.3
+
+该JSR旨在提高现有JavaServer Faces（JSF）规范的清晰度。
+
+### Expression Language 3.0
+
+JSP2.0中的专家组认识到EL本身是有用的，并创建了一个独立于JSP规范的单独EL规范，尽管它们属于同一个JSR。这个拟议的规范将把EL规范放在自己的JSR中。
+
 
 
 
