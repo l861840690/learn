@@ -108,6 +108,18 @@ JavaPersistence2.1规范的目的是扩展JavaPersistenceAPI，以包括社区�
 
 ### Common Annotations for the Java Platform 1.3（Java Platform 1.3的常见注释）
 
+本JSR的目的是定义一小部分公共注释，以便在其他JSR中使用。希望这将有助于避免不同JSR中定义的注释之间不必要的冗余或重复。
+
+### Java Message Service API 2.0（Java消息服务API 2.0）
+
+此JSR建议开发JMS规范的新修订版。自上一次修订以来，JavaSE、JavaEE和消息传递领域都有了许多发展。正因为如此，修改规范的建议在复杂性和雄心上差异很大。
+
+### Java Transaction API \(JTA\) 1.2
+
+本文档介绍Java事务API（JTA）。 JTA指定本地 事务管理器与参与交易的各方之间的Java接口 分布式交易系统：应用程序，资源管理器和 应用服务器。
+
+
+
 
 
 
