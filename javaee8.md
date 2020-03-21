@@ -118,6 +118,10 @@ JavaPersistence2.1规范的目的是扩展JavaPersistenceAPI，以包括社区�
 
 本文档介绍Java事务API（JTA）。 JTA指定本地 事务管理器与参与交易的各方之间的Java接口 分布式交易系统：应用程序，资源管理器和 应用服务器。
 
+### JavaMail 1.6
+
+许多人需要Java平台的附加组件：邮件和消息传递框架。本规范中描述的JavaMailTM API满足了需求。 JavaMail API提供了一组抽象类，这些抽象类定义了组成邮件的对象 系统。
+
 
 
 
