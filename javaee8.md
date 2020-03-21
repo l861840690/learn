@@ -88,7 +88,25 @@ EnterpriseJavaBeans3.0规范的重点是为EJBAPI带来易用性。EnterpriseJav
 
 EnterpriseJavaBeans 3.2的目标是巩固这些进步，继续简化EJB体系结构，并为JavaEE平台范围内进一步启用云计算的目标提供支持。EJB3.2的范围在专注于这些目标时是相对受限的。
 
+### Enterprise JavaBeans 3.1/Interceptors 1.2（拦截器1.2）JSR318
 
+EnterpriseJavaBeans3.0规范的重点是为EJBAPI带来易用性。EnterpriseJavaBeans 3.1规范的目的是进一步简化EJB体系结构，从开发人员的角度降低其复杂性，同时根据社区的需要添加新功能。
+
+重点将放在核心会话bean和消息驱动的bean组件模型及其客户端API上。
+
+### Java EE Connector Architecture 1.7（Java EE连接器体系结构1.7）
+
+JavaEE连接器架构1.6规范的目的是解决J2EE连接器架构1.5中需要连接器专家组和公众进一步支持的领域。本规范打算涉及的领域如下：
+
+通用流入上下文
+
+连接器架构1.5支持事务流入上下文。WorkManager合同与事务流入上下文密切相关。此特性将将事务流入上下文增强到更一般的上下文，以适应其他功能，如安全性。工作经理机制将变得更加灵活和独立于流入合同之外。
+
+### Java Persistence 2.2（Java持久性2.2）
+
+JavaPersistence2.1规范的目的是扩展JavaPersistenceAPI，以包括社区请求的其他特性。专家组的目标将是评估这些问题，并确定和继续改进Java持久性API的总体编程模型和工具的方向。
+
+### Common Annotations for the Java Platform 1.3（Java Platform 1.3的常见注释）
 
 
 
