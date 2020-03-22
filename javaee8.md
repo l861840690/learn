@@ -138,6 +138,74 @@ JavaPersistence2.1规范的目的是扩展JavaPersistenceAPI，以包括社区�
 
 ### Java API for XML-Based RPC \(JAX-RPC\) 1.1 \(Optional\)**（**用于基于XML的RPC（JAX-RPC）1.1的Java API**）**
 
+基于XML的RPC服务器应用程序可以将Web服务定义，描述和导出为 基于RPC的服务。
+
+### Java API for XML Registries \(JAXR\) 1.0 \(Optional\)
+
+这个JSR请求创建JavaAPIforXMLRegistry1.0规范\(JAXR\)。JAXR可被视为类似于，Java命名和目录接口\(JNDI\)**，**但是专门为与xml相关的商业信息的互联网共享而设计的。
+
+##  **Management and Security Technologies（管理和安全技术）**
+
+### Java EE Security API 1.0**（**Java EE安全性API 1.0**）**
+
+这个JSR的目标是通过确保SecurityAPI方面在现代云/PaaS应用程序范例中很有用来改进JavaEE平台。这提高了所有JavaEE服务器的自包含应用程序可移植性，并促进了现代编程概念\(如表达式语言、上下文和依赖项注入\)的使用。
+
+### Java Authentication Service Provider Interface for Containers 1.1**（**容器1.1的Java身份验证服务提供程序接口**）**
+
+拟议的规范将定义一个标准服务提供者接口，通过该接口可以将身份验证机制提供程序与容器集成。通过此接口集成的提供者将用于建立容器访问决策中使用的身份验证标识，包括容器在调用其他容器中的组件时使用的身份验证标识。
+
+### Java Authorization Contract for Containers 1.5**（**Java容器授权合同1.5**）**
+
+拟议的规范将定义新的java.security.Permission类以满足基于J2EE角色的授权模型.该规范将定义容器访问决策与这些实例上的操作的绑定。
+
+### Java EE Application Deployment 1.2**（**Java EE应用程序部署1.2**）**
+
+这是Java的规范™2企业版部署API。这个部署体系结构定义了支持多个提供程序，用于在任何Java EE平台产品上配置和部署应用程序。
+
+### J2EE Management 1.1**（**J2EE管理1.1**）**
+
+JavaTM 2企业版（J2EETM）平台的日益普及 已授权规范Java交付的通用框架 企业管理和监控服务。 JSR77的目标是抽象 J2EE架构的基本可管理方面提供了良好的基础 定义的用于实现检测和信息访问的模型。
+
+### Debugging Support for Other Languages 1.0（对其他语言的调试支持1.0）
+
+本规范建立了相关Java的标准化工具TM虚拟机字节代码到Java以外语言的源代码TM编程语言
+
+##  **Java EE-related Specs in Java SE（**Java SE中与Java EE相关的规范**）**
+
+### Java Management Extensions \(JMX\) 2.0**（**Java管理扩展（JMX）2.0**）**
+
+JMX规范将提供管理架构、API和服务，用于构建基于Web、分布式、动态和模块化的解决方案，以管理启用Java的资源。
+
+### SOAP with Attachments API for Java \(SAAJ\) Specification 1.3（带有Java附件API的SOAP（SAAJ）规范1.3）
+
+JAXM提供了一个API，用于使用ebXML.org、OASIS、W3C和IETF定义的在线协议打包和传输业务事务。
+
+### Streaming API for XML \(StAX\) 1.0（XML流媒体API（StAX）1.0）
+
+用于XML\(StAX\)解析的流API将为XML指定一个基于Java的拉式解析API。流API通过公开一个简单的基于迭代器的API向程序员提供解析控制。这允许程序员请求下一个事件\(拉出事件\)，并允许以过程方式存储状态。
+
+### Java API for XML Processing \(JAXP\) 1.6（用于XML处理的Java API（JAXP）1.6）
+
+本文档介绍了用于XML处理的Java API，版本1.4。 此版本的规范 通过一组标准的Java引入了对解析和处理XML文档的基本支持 平台API。
+
+### Java Database Connectivity 4.0（Java数据库连接4.0）
+
+该规范旨在通过提供易于开发的重点特性和在实用程序和API级别的改进来改善Java应用程序对SQL数据存储的访问。
+
+### Java Architecture for XML Binding \(JAXB\) 2.2（用于XML绑定的Java体系结构（JAXB）2.2）
+
+JAXB2.0是JSR 31 Java的后续，基于JAXB1.0JAXB1.0中引入的体系结构的XML数据绑定规范降低了开发人员从JavaTM应用程序中操作XML内容的障碍。JAXB2.0将研究对所有W3CXMLSchema的支持，包括频繁请求的特性，如类型和元素替换。
+
+### Java API for XML-Based Web Services \(JAX-WS\) 2.2（基于XML的Web服务的Java API（JAX-WS）2.2）
+
+JAX-RPC 2.0规范以新的特性扩展了现有的JAX-RPC 1.0规范，包括以下部分或全部功能：直接支持基于JAXB 2.0的数据绑定、支持最新的W3C和WS-i标准\(例如SOAP 1.2、WSDL 1.2\)、Java&lt;-&gt;WSDL映射的标准化元数据、易于开发的特性、对Web服务更容易演化的支持、改进的处理程序框架、对异步RPC和非HTTP传输的支持。
+
+### JavaBeans Activation Framework \(JAF\) 1.1（JavaBeans激活框架（JAF）1.1）
+
+JavaBeans™激活框架规范是数据输入和注册表技术的标准扩展 Java™平台。
+
+
+
 \*\*\*\*
 
 
