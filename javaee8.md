@@ -122,6 +122,24 @@ JavaPersistence2.1规范的目的是扩展JavaPersistenceAPI，以包括社区�
 
 许多人需要Java平台的附加组件：邮件和消息传递框架。本规范中描述的JavaMailTM API满足了需求。 JavaMail API提供了一组抽象类，这些抽象类定义了组成邮件的对象 系统。
 
+##  **Web Services Technologies（Web服务技术）**
+
+### Java API for RESTful Web Services \(JAX-RS\) 2.1
+
+该规范定义了一组Java API，用于开发根据Web服务构建的Web服务。
+
+### Implementing Enterprise Web Services 1.3**（**实施企业Web服务1.3**）**
+
+该规范定义了Java EE Web服务（WSEE）架构。 这是一个服务架构 利用Java EE组件体系结构来提供客户端和服务器编程模型， 可以跨应用程序服务器移植和互操作，提供可扩展的安全环境**。**
+
+### Web Services Metadata for the Java Platform 2.1**（**Java Platform 2.1的Web服务元数据**）**
+
+该规范定义了简化的编程模型，可促进和加速 企业Web服务的开发。此JSR减少了实现Web所需的信息量 Java EE上的服务，方法是使用元数据声明性地指定 每个应用程序都提供。
+
+### Java API for XML-Based RPC \(JAX-RPC\) 1.1 \(Optional\)**（**用于基于XML的RPC（JAX-RPC）1.1的Java API**）**
+
+\*\*\*\*
+
 
 
 
